@@ -1,0 +1,1 @@
+import{r as c,a3 as f,j as i,K as u,E as v}from"./index.f78aa920.js";function a(o){const s=c(),t=c();if(f){const n=new ResizeObserver(e=>{o==null||o(e,n),e.length&&(t.value=e[0].contentRect)});i(()=>{n.disconnect()}),u(s,(e,r)=>{r&&(n.unobserve(r),t.value=void 0),e&&n.observe(e)},{flush:"post"})}return{resizeRef:s,contentRect:v(t)}}export{a as u};
