@@ -6,10 +6,22 @@ import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 
+const INVALID_CHAR_REGEX = /[\x00-\x1F\x7F<>*#"{}|^[\]`;?:&=+$,]/g
+const DRIVE_LETTER_REGEX = /^[a-z]:/i
+
+export function sanitizeFileName(name) {
+  const match = DRIVE_LETTER_REGEX.exec(name)
+  const driveLetter = match ? match[0] : ""
+
+  // A `:` is only allowed as part of a windows drive letter (ex: C:\foo)
+  // Otherwise, avoid them because they can refer to NTFS alternate data streams.
+  return driveLetter + name.substring(driveLetter.length).replace(INVALID_CHAR_REGEX, "")
+}
+
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue({ 
+    vue({
       template: { transformAssetUrls }
     }),
     // https://github.com/vuetifyjs/vuetify-loader/tree/next/packages/vite-plugin
@@ -20,6 +32,19 @@ export default defineConfig({
       },
     }),
   ],
+  build: {
+    outDir: "./docs/",
+    rollupOptions: {
+      output: {
+        manualChunks (id) {
+          if (id.includes("node_modules")) {
+            return id.split("/node_modules/").pop()?.split("/")[0]
+          }
+        },
+        sanitizeFileName
+      }
+    }
+  },
   define: { 'process.env': {} },
   resolve: {
     alias: {
