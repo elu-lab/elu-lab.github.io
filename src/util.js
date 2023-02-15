@@ -1,4 +1,4 @@
-const BASE_PATH = 'https://elu-lab.github.io/home/'
+const BASE_PATH = '/'
 
 export function httpGet (path, onSuccess, onError) {
   window.axios.get(BASE_PATH + path.join('/'), { withCredentials: true })

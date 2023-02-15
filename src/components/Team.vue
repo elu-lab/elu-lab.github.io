@@ -86,7 +86,7 @@ export default {
           fullName: given + ' ' + family,
           koreanName: korean,
           role: role,
-          image: '/home/img/members/' + given.toLowerCase() + '-' + family.toLowerCase() + '.' + imgtype,
+          image: '/img/members/' + given.toLowerCase() + '-' + family.toLowerCase() + '.' + imgtype,
           isAlumni: status === '졸업'
         }
       })

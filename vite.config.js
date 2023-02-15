@@ -21,7 +21,6 @@ export function sanitizeFileName(name) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/home/',
   plugins: [
     vue({
       template: { transformAssetUrls }
