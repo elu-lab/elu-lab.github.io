@@ -1,6 +1,7 @@
 // Plugins
 import vue from '@vitejs/plugin-vue'
 import vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
+import viteCompression from 'vite-plugin-compression';
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -20,7 +21,7 @@ export function sanitizeFileName(name) {
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'https://elu-lab.github.io/home/',
+  base: '/home/',
   plugins: [
     vue({
       template: { transformAssetUrls }
@@ -32,6 +33,7 @@ export default defineConfig({
         configFile: 'src/styles/settings.scss',
       },
     }),
+    viteCompression()
   ],
   build: {
     outDir: "./docs/",

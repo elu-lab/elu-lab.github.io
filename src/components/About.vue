@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  v-parallax(src="/img/intro-parallex.png", height="40vh", scale="50%")
+  v-parallax(src="/img/intro-parallex.jpg", height="40vh", scale="50%")
     .d-flex.flex-column.fill-height.justify-center.align-center.text-white.text-shadow
       h1.font-weight-black.text-h3(v-if="lang === 'en'") Explainable Language Understanding (ELU) Lab
       h1.font-weight-black.text-h3(v-else) 설명가능한 언어이해 연구실 (ELU lab)
