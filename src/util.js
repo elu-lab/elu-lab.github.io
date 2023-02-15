@@ -1,4 +1,4 @@
-const BASE_PATH = '/'
+const BASE_PATH = 'https://elu-lab.github.io/home/'
 
 export function httpGet (path, onSuccess, onError) {
   window.axios.get(BASE_PATH + path.join('/'), { withCredentials: true })
@@ -34,35 +34,4 @@ export function nameParser(names) {
       return name.trim()
     }
   })
-}
-
-
-export function httpPut (path, payload, onSuccess, onError) {
-  return window.axios.put(BASE_PATH + path.join('/'), payload, { withCredentials: true })
-    .then((response) => {
-      if (response.status !== 200) return onError('HTTP connection error')
-      if (response.data.error) return onError(response.data.data)
-
-      onSuccess(response.data.data)
-    }).catch((error) => onError(error))
-}
-
-export function httpPost (path, payload, onSuccess, onError) {
-  return window.axios.post(BASE_PATH + path.join('/'), payload, { withCredentials: true })
-    .then((response) => {
-      if (response.status !== 200) return onError('HTTP connection error')
-      if (response.data.error) return onError(response.data.data)
-
-      onSuccess(response.data.data)
-    }).catch((error) => onError(error))
-}
-
-export function httpDelete (path, onSuccess, onError) {
-  return window.axios.delete(BASE_PATH + path.join('/'), { withCredentials: true })
-    .then((response) => {
-      if (response.status !== 200) return onError('HTTP connection error')
-      if (response.data.error) return onError(response.data.data)
-
-      onSuccess(response.data.data)
-    }).catch((error) => onError(error))
 }
