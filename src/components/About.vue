@@ -46,7 +46,7 @@ div
 
     v-divider.my-10
     h2 {{lang === 'ko' ? "최근 소식" : "Recent News"}}
-    v-banner.my-1(v-for="item in recentNews", lines='three', :icon="item.icon", :color="item.color")
+    v-banner.my-1(v-for="item in recentNews", :icon="item.icon", :color="item.color")
       v-banner-text: p
         .font-weight-black.text-body-1(:class="'text-' + item.color") {{item.date}}
         .font-weight-light.text-body-1(v-html="item.content")
@@ -87,13 +87,13 @@ export default {
           lang: 'ko',
           icon: 'mdi-book',
           color: 'indigo-lighten-2',
-          content: window.marked.parse(`${name}에 우리 연구실의 논문 "${item.TITLE}"이 게재되었습니다! ` +item.NOTE)
+          content: window.marked.parse(`${name}에 우리 연구실의 논문 "${item.TITLE}"이 게재되었습니다! <span class="text-grey">` + item.NOTE + '</span>')
         }, {
           date: item.YEAR + '/' + monthParser(item.MONTH),
           lang: 'en',
           icon: 'mdi-book',
           color: 'indigo-lighten-2',
-          content: window.marked.parse(`Our paper titled "${item.TITLE}" is accepted to ${name}! ` +item.NOTE)
+          content: window.marked.parse(`Our paper titled "${item.TITLE}" is accepted to ${name}! <span class="text-grey">` + item.NOTE + '</span>')
         }]
       })
     }, (error) => {

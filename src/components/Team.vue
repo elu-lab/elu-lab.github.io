@@ -12,51 +12,28 @@ v-container
       br
       | If you're interested in our study, please contact advisor through 'Contact' tab.
 
-  v-dialog(v-model="dialog", max-width="75vw", max-height="75vh")
-    v-card
-      v-card-text
-        v-row.margin-inside
-          .v-col-12.v-col-md-auto
-            v-img(lazy-src='/img/placeholder.png', :src="dialogInfo.image", width="250px")
-          .v-col-12.v-col-md-auto(v-html="dialogInfo.text")
-        v-divider.my-5
-        h3 {{lang === 'ko' ? "논문 목록" : "Publications"}}
-        v-list(lines="three", density="compact")
-          v-list-item(v-for="item in dialogInfo.pubs", active-color="primary", variant="plain", @click="openLink(item)")
-            span.mr-2.text-grey(v-for="author in item.AUTHOR") {{author}};
-            span.text-grey ({{item.YEAR}})
-            p.my-0.py-0 {{item.TITLE}}
-            p.mt-0.pt-0.font-italic.text-right.text-grey(v-if="item.type === 'inproceedings'") @ {{item.SERIES}} conference
-            p.mt-0.pt-0.font-italic.text-right.text-grey(v-else-if="item.type === 'article'") {{item.JOURNAL}} {{item.VOLUME}}, No. {{item.NUMBER}}
-            template(v-slot:append)
-              v-icon(size='small', color="green", v-if="item.DOI") mdi-link
-              v-icon(size='small', color='grey', v-else) mdi-link-off
-
-  v-row(v-if="presentMembers.length > 1")
+  v-row
     .v-col-12
       h1.text-indigo-accent-2 {{lang === 'ko' ? "현재 구성원" : "Present Members"}}
     .v-col-2(v-for="item in presentMembers")
-      v-card.rounded-5(elevation=3, @click="openDialog(item)")
+      v-card.rounded-5(elevation=3, @click="$router.push('/' + lang + '/' + item.path)")
         v-img.align-end(lazy-src='/img/placeholder.png', :src="item.image", aspect-ratio='0.75', cover)
-          .d-flex.flex-column.fill-height.justify-center.align-end.text-white.text-shadow
-            .font-weight-black.text-h6(v-if="lang === 'en'") {{getRole(item.role, 'en')}} {{item.fullName}}
-            .font-weight-black.text-h6(v-else) {{item.koreanName}} {{item.role}}
+        v-card-actions
+          .font-weight-black.text-h6(v-if="lang === 'en'") {{getRole(item.role, 'en')}} {{item.fullName}}
+          .font-weight-black.text-h6(v-else) {{item.koreanName}} {{item.role}}
+          v-spacer
+          v-btn(icon="mdi-card-account-details")
 
     .v-col-12(v-if="alumniMembers.length")
       h1.text-indigo-accent-2 {{lang === 'ko' ? "졸업/퇴직한 구성원" : "Alumni Members"}}
     .v-col-2(v-for="item in alumniMembers")
-      v-card.rounded-5(elevation=3, @click="openDialog(item)")
+      v-card.rounded-5(elevation=3, @click="$router.push('/' + lang + '/' + item.path)")
         v-img.align-end(lazy-src='/img/placeholder.png', :src="item.image", aspect-ratio='0.75', cover)
-          .d-flex.flex-column.fill-height.justify-center.align-end.text-white.text-shadow
-            .font-weight-black.text-h6(v-if="lang === 'en'") {{getRole(item.role, 'en')}} {{item.fullName}}
-            .font-weight-black.text-h6(v-else) {{item.koreanName}} {{item.role}}
-  v-card(v-else, elevation=3)
-    v-card-text
-      v-row.margin-inside
-        .v-col-12.v-col-md-auto
-          v-img(lazy-src='/img/placeholder.png', :src="dialogInfo.image", width="250px")
-        .v-col-12.v-col-md-auto(v-html="dialogInfo.text")
-
+        v-card-actions
+          .font-weight-black.text-h6(v-if="lang === 'en'") {{getRole(item.role, 'en')}} {{item.fullName}}
+          .font-weight-black.text-h6(v-else) {{item.koreanName}} {{item.role}}
+          v-spacer
+          v-btn(icon="mdi-card-account-details")
 </template>
 
 <script>
@@ -72,27 +49,22 @@ export default {
     return {
       members: [],
       publications: [],
-      dialog: false,
-      memberSelected: {}
     }
   },
   mounted() {
     httpGet(['data', 'member-list.txt'], (data) => {
       this.members = data.split('\n').map((line) => {
-        const [family, given, korean, role, imgtype, status] = line.split(',')
+        const [family, given, korean, role, status] = line.split(',')
         return {
           familyName: family,
           givenName: given,
           fullName: given + ' ' + family,
           koreanName: korean,
           role: role,
-          image: '/img/members/' + given.toLowerCase() + '-' + family.toLowerCase() + '.' + imgtype,
+          image: '/img/members/' + given.toLowerCase() + '-' + family.toLowerCase() + '.jpg',
+          path: role + '/' + given + '/' + family,
           isAlumni: status === '졸업'
         }
-      })
-      this.$nextTick(() => {
-        if (this.presentMembers.length === 1)
-          this.openDialog(this.presentMembers[0], false)
       })
     }, () => {})
 
@@ -107,28 +79,17 @@ export default {
   },
   methods: {
     getRole(rolename, lang) {
-      if (lang === 'ko') return rolename
-      if (rolename === '교수') return 'Prof.'
-      if (rolename === '연구원') return 'Researcher'
-      if (rolename === '박사과정') return '(Ph.D student)'
-      if (rolename === '석사과정') return '(M.S. student)'
-      if (rolename === '박사') return 'Ph.D.'
-      if (rolename === '석사') return 'M.S.'
-      return '(Undergrad intern)'
+      if (lang === 'en') return rolename
+      if (rolename === 'Prof.') return '교수'
+      if (rolename === 'Researcher') return '연구원'
+      if (rolename === 'Ph.D student') return '박사과정'
+      if (rolename === 'M.S. student') return '석사과정'
+      if (rolename === 'Ph.D.') return '박사'
+      if (rolename === 'M.S.') return '석사'
+      return '학부생 인턴'
     },
     openLink (item) {
       if (item.DOI) window.open('https://doi.org/' + item.DOI)
-    },
-    openDialog (item, open=true) {
-      this.memberSelected = item
-      httpGet(['data', 'members', item.givenName.toLowerCase() + '-' + item.familyName.toLowerCase() + '.md'],
-        (data) => {
-          const [en, ko] = data.split('---')
-          this.memberSelected.enText = en
-          this.memberSelected.koText = ko
-        }, (error) => {})
-
-      this.dialog = open
     }
   },
   computed: {
@@ -137,17 +98,6 @@ export default {
     },
     alumniMembers () {
       return _.filter(this.members, (item) => item.isAlumni)
-    },
-    dialogInfo () {
-      if (this.memberSelected.enText)
-        return {
-          name: this.lang === 'ko' ? this.memberSelected.koreanName : this.memberSelected.fullName,
-          text: window.marked.parse(this.lang === 'ko' ? this.memberSelected.koText : this.memberSelected.enText),
-          role: this.getRole(this.memberSelected.role, this.lang),
-          image: this.memberSelected.image,
-          pubs: _.filter(this.publications, (p) => _.includes(p.AUTHOR, this.memberSelected.fullName))
-        }
-      else return {}
     }
   }
 }

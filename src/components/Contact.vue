@@ -1,6 +1,6 @@
 <template lang="pug">
 v-container
-  v-row
+  v-row.mt-6
     v-card.v-col-12.v-col-md-6
       v-card-title: h2 {{lang === 'ko' ? "위치" : "Location"}}
       v-card-text
