@@ -14,7 +14,7 @@ v-container
 
   v-row.mt-6
     .v-col-12.v-col-md-auto
-      v-img(lazy-src='/img/placeholder.png', :src="imagePath", width="250px")
+      v-img(lazy-src='/img/noimg.svg', :src="imagePath", width="250px")
     .v-col-12.v-col-md-auto.margin-inside(v-html="lang === 'ko' ? biography.ko : biography.en")
     .v-col-12
       v-divider.my-5
@@ -24,19 +24,19 @@ v-container
           span.mr-2(v-for="author in item.AUTHOR",
             :class="{'font-weight-bold text-grey-darken-2': author === person, 'text-grey': author !== person}") {{author}};
           span.text-grey ({{item.YEAR}})
-          p.my-0.py-0.font-weight-black(:class="{'text-indigo': item.type !== 'misc'}") {{item.TITLE}}
-          .mt-0.pt-0.text-grey.text-right
-            v-chip.float-left(size="small", v-for="tag in item.tags", :text="tag")
-            v-spacer
-            span.font-italic(v-if="item.type === 'inproceedings'") @ {{item.SERIES}} conference
-            span.font-italic(v-else-if="item.type === 'article'") {{item.JOURNAL}} {{item.VOLUME}}, No. {{item.NUMBER}}
-          template(v-slot:append)
-            v-icon(size='small', color="success", v-if="item.DOI") mdi-link
-            v-icon(size='small', color='grey', v-else) mdi-link-off
-          template(v-slot:prepend)
+          p.my-0.py-0.font-weight-black(:class="{'text-indigo': item.type !== 'misc'}")
             v-icon(size='small', color="indigo", v-if="item.type === 'inproceedings'") mdi-script-text
             v-icon(size='small', color="grey", v-else-if="item.type === 'misc'") mdi-seal-variant
             v-icon(size='small', color='indigo', v-else) mdi-book-open-page-variant
+            span.mx-3 {{item.TITLE}}
+          .mt-0.pt-0.text-grey.text-right
+            .font-italic(v-if="item.type === 'inproceedings'") @ {{item.SERIES}} conference
+            .font-italic(v-else-if="item.type === 'article'") {{item.JOURNAL}} {{item.VOLUME}}, No. {{item.NUMBER}}
+          .mt-0.pt-0.text-right
+            v-chip.float-left(size="small", v-for="tag in item.tags", :text="tag")
+            v-spacer
+            v-icon(size='small', color="success", v-if="item.DOI") mdi-link
+            v-icon(size='small', color='grey', v-else) mdi-link-off
 
 </template>
 

@@ -17,7 +17,7 @@ v-container
       h1.text-indigo-accent-2 {{lang === 'ko' ? "현재 구성원" : "Present Members"}}
     .v-col-2(v-for="item in presentMembers")
       v-card.rounded-5(elevation=3, @click="$router.push('/' + lang + '/' + item.path)")
-        v-img.align-end(lazy-src='/img/placeholder.png', :src="item.image", aspect-ratio='0.75', cover)
+        v-img.align-end(lazy-src='/img/noimg.svg', :src="item.image", aspect-ratio='0.75', cover)
         v-card-actions
           .font-weight-black.text-h6(v-if="lang === 'en'") {{getRole(item.role, 'en')}} {{item.fullName}}
           .font-weight-black.text-h6(v-else) {{item.koreanName}} {{item.role}}
@@ -28,7 +28,7 @@ v-container
       h1.text-indigo-accent-2 {{lang === 'ko' ? "졸업/퇴직한 구성원" : "Alumni Members"}}
     .v-col-2(v-for="item in alumniMembers")
       v-card.rounded-5(elevation=3, @click="$router.push('/' + lang + '/' + item.path)")
-        v-img.align-end(lazy-src='/img/placeholder.png', :src="item.image", aspect-ratio='0.75', cover)
+        v-img.align-end(lazy-src='/img/noimg.svg', :src="item.image", aspect-ratio='0.75', cover)
         v-card-actions
           .font-weight-black.text-h6(v-if="lang === 'en'") {{getRole(item.role, 'en')}} {{item.fullName}}
           .font-weight-black.text-h6(v-else) {{item.koreanName}} {{item.role}}

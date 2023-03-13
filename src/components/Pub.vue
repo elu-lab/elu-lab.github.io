@@ -16,7 +16,7 @@ v-container
       h1.text-indigo-accent-2 {{group[0]}}
     div(:class="item.key === abstractOpen ? 'v-col-12 v-col-md-6' : 'v-col-6 v-col-md-3'", v-for="item in group[1]")
       v-card(:color="item.key === abstractOpen ? 'grey-lighten-3' : ''", elevation=3)
-        v-img.align-end(v-if="item.key !== abstractOpen", lazy-src='/img/placeholder.png',
+        v-img.align-end(v-if="item.key !== abstractOpen", lazy-src='/img/noimg.svg',
           :src="'/img/paper/' + item.key + '.png'", height='8em', cover)
         v-card-subtitle.mb-0.pb-0.mt-2
           span.mr-2(v-for="author in item.AUTHOR") {{author}};
@@ -24,7 +24,7 @@ v-container
         v-card-subtitle.mt-0.pt-0.font-italic.text-right(v-if="item.type === 'inproceedings'") @ {{item.SERIES}} conference
         v-card-subtitle.mt-0.pt-0.font-italic.text-right(v-else-if="item.type === 'article'") {{item.JOURNAL}} {{item.VOLUME}}, No. {{item.NUMBER}}
         v-card-text(v-if="item.key === abstractOpen")
-          v-img(lazy-src='/img/placeholder.png', :src="'/img/paper/' + item.key + '.png'", aspect-ratio="1.66", cover)
+          v-img(lazy-src='/img/noimg.svg', :src="'/img/paper/' + item.key + '.png'", aspect-ratio="1.66", cover)
           p {{item.ABSTRACT}}
         v-card-actions
           v-chip(size="small", :color="tagColor(tag)" v-for="tag in item.tags") {{tag}}

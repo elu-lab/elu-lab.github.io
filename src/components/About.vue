@@ -1,10 +1,8 @@
 <template lang="pug">
 div
-  v-parallax(src="/img/intro-parallex.jpg", height="40vh", scale="50%")
-    .d-flex.flex-column.fill-height.justify-center.align-center.text-white.text-shadow
-      h1.font-weight-black.text-h3(v-if="lang === 'en'") Explainable Language Understanding (ELU) Lab
-      h1.font-weight-black.text-h3(v-else) 설명가능한 언어이해 연구실 (ELU lab)
-  .text-body-1.font-weight-thin.float-right The DALL-E generated the above image.
+  .d-flex.flex-column.fill-height.justify-center.align-center.py-10.px-5
+    h1.font-weight-black.text-h3(v-if="lang === 'en'") Explainable Language Understanding (ELU) Lab
+    h1.font-weight-black.text-h3(v-else) 설명가능한 언어이해 연구실 (ELU lab)
   v-container
     .mt-10(v-if="lang === 'en'")
       p.my-2
@@ -46,10 +44,10 @@ div
 
     v-divider.my-10
     h2 {{lang === 'ko' ? "최근 소식" : "Recent News"}}
-    v-banner.my-1(v-for="item in recentNews", :icon="item.icon", :color="item.color")
+    v-banner.my-1(v-for="item in recentNews")
       v-banner-text: p
-        .font-weight-black.text-body-1(:class="'text-' + item.color") {{item.date}}
-        .font-weight-light.text-body-1(v-html="item.content")
+        span.font-weight-black(:class="'text-' + item.color") {{item.date}}
+        span.font-weight-light(v-html="item.content")
 </template>
 
 <script>
@@ -87,13 +85,13 @@ export default {
           lang: 'ko',
           icon: 'mdi-book',
           color: 'indigo-lighten-2',
-          content: window.marked.parse(`${name}에 우리 연구실의 논문 "${item.TITLE}"이 게재되었습니다! <span class="text-grey">` + item.NOTE + '</span>')
+          content: window.marked.parse(`${name}에 우리 연구실의 논문 "${item.TITLE}"이 게재되었습니다. <span class="text-grey">` + item.NOTE + '</span>')
         }, {
           date: item.YEAR + '/' + monthParser(item.MONTH),
           lang: 'en',
           icon: 'mdi-book',
           color: 'indigo-lighten-2',
-          content: window.marked.parse(`Our paper titled "${item.TITLE}" is accepted to ${name}! <span class="text-grey">` + item.NOTE + '</span>')
+          content: window.marked.parse(`Our paper titled "${item.TITLE}" is accepted to ${name}. <span class="text-grey">` + item.NOTE + '</span>')
         }]
       })
     }, (error) => {
