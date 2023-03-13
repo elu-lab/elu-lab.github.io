@@ -13,7 +13,7 @@ v-container
         br
         v-img(src="https://www.cau.ac.kr/cau/img/about/caupusmap/map.png")
     v-card.v-col-12.v-col-md-6
-      v-card-title
+      v-card-text
         h2(v-if="lang === 'ko'") 학부 인턴, 석박사과정 학생 모집중
         h2(v-else) Recruit: Internship/MS & Ph.D students
       v-card-text.margin-inside(v-html="lang === 'ko' ? panel.ko : panel.en")

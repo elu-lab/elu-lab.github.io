@@ -1,9 +1,9 @@
-## 필수조건
+### 필수조건
 1. Python 등 **프로그래밍 언어를 읽고** (느리더라도) 이해할 수 있어야 합니다.
 2. 한국어/영어 등 **목표하는 언어**에 대한 초보적인 이해가 필요합니다.
 3. **선형대수학**, **통계학/확률론**, **고등학교 수준의 미적분학** 지식이 필요합니다.
 
-## 우대조건
+### 우대조건
 1. 연구에 대한 **의지와 관심, 그리고 적극성**이 보이는 학생을 우대합니다.
 2. **수학/논리학/언어학 관련 전공자**인 경우 연구실 과제 상황에 따라 도움이 될 수 있습니다.
 3. 석사과정의 경우, 본인이 원하는 연구 주제가 있거나, 연구실 내 과제에서 필요한 경험*이 있다면 우대합니다.
@@ -17,12 +17,12 @@
 
 ---
 
-## Requirements
+### Requirements
 1. Python programming skills (Can you read and understand a Python code?)
 2. Understanding about human languages
 3. Linear algebra, Statistics/Probability theory, Calculus (grade 12)
 
-## Preferences
+### Preferences
 1. We prefer students who show willingness, interest, and initiative in research.
 2. We prefer mathematics/logic/linguistics major. (depending on the lab's ongoing research)
 3. Master's program: We prefer those who have their own research topic or specific experiences* required for our ongoing research.
