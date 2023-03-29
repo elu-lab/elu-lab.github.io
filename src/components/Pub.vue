@@ -1,36 +1,36 @@
 <template lang="pug">
-v-container
-  h1.text-center.mb-3.text-indigo-darken-4
-    v-icon.ma-2(size='small') mdi-file-document-multiple
-    span {{lang === 'ko'? "논문실적" : "Publications"}}
+div
+  v-img(src="/img/parallex/paper.png", height="20vh", cover, transition='none')
+    .d-flex.flex-column.fill-height.justify-center.align-center.v-col-md-6
+      h1.font-weight-black.text-black.text-shadow-white.text-h3 {{lang === 'ko'? "논문실적" : "Publications"}}
+  v-container
+    v-form
+      v-row
+        v-col(cols=4)
+          v-select(chips, multiple, placeholder="Tags", v-model="tagSelected", :items="allTags", @blur="search()")
+        v-col(cols=8)
+          v-text-field(label="Word to search", v-model="searchWord", @blur="search()", @keypress.space="search()", @keypress.enter="search()")
 
-  v-form
-    v-row
-      v-col(cols=4)
-        v-select(chips, multiple, placeholder="Tags", v-model="tagSelected", :items="allTags", @blur="search()")
-      v-col(cols=8)
-        v-text-field(label="Word to search", v-model="searchWord", @blur="search()", @keypress.space="search()", @keypress.enter="search()")
-
-  v-row(v-for="group in yearCategorizedItems")
-    .v-col-12
-      h1.text-indigo-accent-2 {{group[0]}}
-    div(:class="item.key === abstractOpen ? 'v-col-12 v-col-md-6' : 'v-col-6 v-col-md-3'", v-for="item in group[1]")
-      v-card(:color="item.key === abstractOpen ? 'grey-lighten-3' : ''", elevation=3)
-        v-img.align-end(v-if="item.key !== abstractOpen", lazy-src='/img/noimg.svg',
-          :src="'/img/paper/' + item.key + '.png'", height='8em', cover)
-        v-card-subtitle.mb-0.pb-0.mt-2
-          span.mr-2(v-for="author in item.AUTHOR") {{author}};
-        v-card-title.my-0.py-0 {{item.TITLE}}
-        v-card-subtitle.mt-0.pt-0.font-italic.text-right(v-if="item.type === 'inproceedings'") @ {{item.SERIES}} conference
-        v-card-subtitle.mt-0.pt-0.font-italic.text-right(v-else-if="item.type === 'article'") {{item.JOURNAL}} {{item.VOLUME}}, No. {{item.NUMBER}}
-        v-card-text(v-if="item.key === abstractOpen")
-          v-img(lazy-src='/img/noimg.svg', :src="'/img/paper/' + item.key + '.png'", aspect-ratio="1.66", cover)
-          p {{item.ABSTRACT}}
-        v-card-actions
-          v-chip(size="small", :color="tagColor(tag)" v-for="tag in item.tags") {{tag}}
-          v-spacer
-          v-btn(size='small', icon="mdi-text", color="blue", @click="toggleAbstract(item)")
-          v-btn(size='small', icon="mdi-link", color="green", v-if="item.DOI", @click="openLink(item)")
+    v-row(v-for="group in yearCategorizedItems")
+      .v-col-12
+        h1.text-indigo-accent-2 {{group[0]}}
+      div(:class="item.key === abstractOpen ? 'v-col-12 v-col-md-6' : 'v-col-6 v-col-md-3'", v-for="item in group[1]")
+        v-card(:color="item.key === abstractOpen ? 'grey-lighten-3' : ''", elevation=3, @click="toggleAbstract(item)")
+          v-img.align-end(v-if="item.key !== abstractOpen", lazy-src='/img/noimg.svg',
+            :src="'/img/paper/' + item.key + '.png'", height='8em', cover)
+          v-card-subtitle.mb-0.pb-0.mt-2
+            span.mr-2(v-for="author in item.AUTHOR") {{author}};
+          v-card-title.my-0.py-0 {{item.TITLE}}
+          v-card-subtitle.mt-0.pt-0.font-italic.text-right(v-if="item.type === 'inproceedings'") @ {{item.SERIES}} conference
+          v-card-subtitle.mt-0.pt-0.font-italic.text-right(v-else-if="item.type === 'article'") {{item.JOURNAL}} {{item.VOLUME}}, No. {{item.NUMBER}}
+          v-card-text(v-if="item.key === abstractOpen")
+            v-img(lazy-src='/img/noimg.svg', :src="'/img/paper/' + item.key + '.png'", aspect-ratio="1.66", cover)
+            p {{item.ABSTRACT}}
+          v-card-actions
+            v-chip(size="small", :color="tagColor(tag)" v-for="tag in item.tags") {{tag}}
+            v-spacer
+            v-btn(size='small', icon="mdi-text", color="blue", @click="toggleAbstract(item)")
+            v-btn(size='small', icon="mdi-link", color="green", v-if="item.DOI", @click="openLink(item)")
 </template>
 
 <script>

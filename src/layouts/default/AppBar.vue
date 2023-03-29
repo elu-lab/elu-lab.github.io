@@ -1,17 +1,15 @@
 <template lang="pug">
-v-app-bar(flat, color='indigo-darken-3', elevation=1)
+v-app-bar(flat, color='indigo-darken-3', elevation=1, density="compact")
   v-app-bar-title
-    | ELU Lab @ CAU
-  v-tabs
-    router-link.text-white.text-decoration-none(:to="'/' + lang", active-class="indigo-lighten-2")
-      v-tab {{isKorean? "소개" : "About"}}
-    router-link.text-white.text-decoration-none(:to="'/' + lang + '/Prof./Bugeun/Kim'", active-class="indigo-lighten-2")
-      v-tab {{isKorean? "사람들" : "Team" }}
-    router-link.text-white.text-decoration-none(:to="'/' + lang + '/pub'", active-class="indigo-lighten-2")
-      v-tab {{isKorean? "논문" : "Papers" }}
-    router-link.text-white.text-decoration-none(:to="'/' + lang + '/contact'", active-class="indigo-lighten-2")
-      v-tab {{isKorean? "문의하기" : "Contact"}}
-  v-btn(size="small", @click="langChange"): v-icon mdi-translate
+    router-link.text-white.text-decoration-none(:to="'/' + lang", active-class="indigo-lighten-2") ELU Lab @ CAU
+  template(v-slot:extension)
+    v-spacer
+    v-tabs(fixed-tabs, center-active, v-model="tab")
+      router-link(v-for="tab in tabs").text-white.text-decoration-none(:to="'/' + lang + tab.path", active-class="indigo-lighten-2")
+        v-tab(style="min-width:5em") {{tab[lang]}}
+  v-btn(size="small", @click="langChange")
+    v-icon.mr-1 mdi-translate
+    span {{isKorean? "Eng": "한국어"}}
 </template>
 
 <script>
@@ -19,7 +17,15 @@ export default {
   name: "AppBar",
   data () {
     return {
-      isKorean: true
+      isKorean: true,
+      tabs: [
+        {path: '', ko: '소개', en: 'About'},
+        {path: '/Prof./Bugeun/Kim', ko: '사람들', en: 'Team'},
+        {path: '/pub', ko: '논문', en: 'Papers'},
+        {path: '/course', ko: '강의', en: 'Courses'},
+        {path: '/contact', ko: '문의하기', en: 'Contact'},
+      ],
+      tab: ''
     }
   },
   methods: {

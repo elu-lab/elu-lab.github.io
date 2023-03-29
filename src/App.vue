@@ -11,6 +11,10 @@
   text-shadow 2px 5px 5px black
   text-outline 1px black
 
+.text-shadow-white
+  text-shadow 2px 5px 5px white
+  text-outline 1px white
+
 .margin-inside
   h2, h3, p
     margin-top .5em !important

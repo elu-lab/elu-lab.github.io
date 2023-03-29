@@ -10,6 +10,7 @@
     - Semantic Parsing models *- includes Text-to-code parsing, Abstract Meaning Representation(AMR) parsing, etc.*
 - AI applications
     - Educational application of question answering models
+    - Human-AI interaction technologies
     - etc.
 
 ### Affiliation
@@ -34,6 +35,7 @@
     - 의미분석 기술 *- Text-to-code parsing, Abstract Meaning Representation(AMR) parsing 등.*
 - AI 응용
     - Educational application of question answering models 등
+    - 인간-AI 상호작용 연구 등
 
 ### 경력
 - *2023.3 - 현재*, 중앙대학교 AI학과 조교수 (대한민국 서울)

@@ -1,39 +1,39 @@
 <template lang="pug">
-v-container
-  h1.text-center.mb-3.text-indigo-darken-4
-    v-icon.ma-2(size='small') mdi-account-group
-    span {{lang === 'ko'? "연구실 사람들" : "Our Team"}}
+div
+  table(style="background:#cecece;height:20vh;width:100%"): tr
+    td: img(src="/img/parallex/team.png", style="height:20vh")
+    td: .text-white.text-shadow.text-h3.font-weight-black.text-center {{lang === 'ko'? "연구실 사람들" : "Our Team"}}
+  v-container
+    v-banner.my-5(icon="mdi-bullhorn", color="red")
+      v-banner-text: p.text-h5.text-red-darken-3
+        | 연구실의 첫 학부생 인턴, 석박사과정 학생을 모집하고 있습니다. '문의하기'를 눌러 문의해주세요!
+        br
+        | We're looking for the first MS/PhD students and interns who are interested in our study!
+        br
+        | If you're interested in our study, please contact advisor through 'Contact' tab.
 
-  v-banner.my-5(icon="mdi-bullhorn", color="red")
-    v-banner-text: p.text-h5.text-red-darken-3
-      | 연구실의 첫 학부생 인턴, 석박사과정 학생을 모집하고 있습니다. '문의하기'를 눌러 문의해주세요!
-      br
-      | We're looking for the first MS/PhD students and interns who are interested in our study!
-      br
-      | If you're interested in our study, please contact advisor through 'Contact' tab.
+    v-row
+      .v-col-12
+        h1.text-indigo-accent-2 {{lang === 'ko' ? "현재 구성원" : "Present Members"}}
+      .v-col-2(v-for="item in presentMembers")
+        v-card.rounded-5(elevation=3, @click="$router.push('/' + lang + '/' + item.path)")
+          v-img.align-end(lazy-src='/img/noimg.svg', :src="item.image", aspect-ratio='0.75', cover)
+          v-card-actions
+            .font-weight-black.text-h6(v-if="lang === 'en'") {{getRole(item.role, 'en')}} {{item.fullName}}
+            .font-weight-black.text-h6(v-else) {{item.koreanName}} {{item.role}}
+            v-spacer
+            v-btn(icon="mdi-card-account-details")
 
-  v-row
-    .v-col-12
-      h1.text-indigo-accent-2 {{lang === 'ko' ? "현재 구성원" : "Present Members"}}
-    .v-col-2(v-for="item in presentMembers")
-      v-card.rounded-5(elevation=3, @click="$router.push('/' + lang + '/' + item.path)")
-        v-img.align-end(lazy-src='/img/noimg.svg', :src="item.image", aspect-ratio='0.75', cover)
-        v-card-actions
-          .font-weight-black.text-h6(v-if="lang === 'en'") {{getRole(item.role, 'en')}} {{item.fullName}}
-          .font-weight-black.text-h6(v-else) {{item.koreanName}} {{item.role}}
-          v-spacer
-          v-btn(icon="mdi-card-account-details")
-
-    .v-col-12(v-if="alumniMembers.length")
-      h1.text-indigo-accent-2 {{lang === 'ko' ? "졸업/퇴직한 구성원" : "Alumni Members"}}
-    .v-col-2(v-for="item in alumniMembers")
-      v-card.rounded-5(elevation=3, @click="$router.push('/' + lang + '/' + item.path)")
-        v-img.align-end(lazy-src='/img/noimg.svg', :src="item.image", aspect-ratio='0.75', cover)
-        v-card-actions
-          .font-weight-black.text-h6(v-if="lang === 'en'") {{getRole(item.role, 'en')}} {{item.fullName}}
-          .font-weight-black.text-h6(v-else) {{item.koreanName}} {{item.role}}
-          v-spacer
-          v-btn(icon="mdi-card-account-details")
+      .v-col-12(v-if="alumniMembers.length")
+        h1.text-indigo-accent-2 {{lang === 'ko' ? "졸업/퇴직한 구성원" : "Alumni Members"}}
+      .v-col-2(v-for="item in alumniMembers")
+        v-card.rounded-5(elevation=3, @click="$router.push('/' + lang + '/' + item.path)")
+          v-img.align-end(lazy-src='/img/noimg.svg', :src="item.image", aspect-ratio='0.75', cover)
+          v-card-actions
+            .font-weight-black.text-h6(v-if="lang === 'en'") {{getRole(item.role, 'en')}} {{item.fullName}}
+            .font-weight-black.text-h6(v-else) {{item.koreanName}} {{item.role}}
+            v-spacer
+            v-btn(icon="mdi-card-account-details")
 </template>
 
 <script>
