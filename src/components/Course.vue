@@ -4,7 +4,7 @@ div
     td: .text-black.text-shadow-white.text-h3.font-weight-black.text-center {{lang === 'ko'? "강의" : "Courses"}}
     td.text-right: img(src="/img/parallex/course.png", style="height:20vh")
   v-container
-    v-data-table(:headers="headers", :items="courses", item-value="idx", items-per-page="10")
+    v-data-table(:headers="headers", :items="courses", item-value="idx", :item-title="courseTitle" items-per-page="10")
 </template>
 
 <script>
@@ -24,8 +24,7 @@ export default {
         const [year, semester, grade, nameKo, nameEn] = line.split(',')
         return {
           idx: idx,
-          year: year,
-          semester: semester,
+          semester: year + '-' + semester,
           gradeKo: (grade === '대학원'? grade : grade + '학년'),
           gradeEn: (grade === '대학원'? 'Graduate' : 'Grade '+ grade),
           nameKo: nameKo,
@@ -38,19 +37,20 @@ export default {
     headers () {
       if (this.lang === 'ko') {
         return [
-          { title: '연도', key: 'year' },
           { title: '학기', key: 'semester' },
           { title: '대상학년', key: 'gradeKo' },
           { title: '과목명', key: 'nameKo' },
         ]
       } else {
         return [
-          { title: 'Year', key: 'year' },
           { title: 'Semester', key: 'semester' },
           { title: 'Grade', key: 'gradeEn' },
           { title: 'Course Title', key: 'nameEn' },
         ]
       }
+    },
+    courseTitle () {
+      return (this.lang === 'ko') ? 'nameKo' : 'nameEn'
     }
   }
 }
