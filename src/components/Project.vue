@@ -2,10 +2,29 @@
 div
   table(style="background:#e2f1fb;height:20vh;width:100%"): tr
     td: img(src="/img/parallex/research.png", style="height:20vh")
-    td: .text-black.text-shadow-white.text-h3.font-weight-black {{lang === 'ko'? "연구 주제" : "Research Interests"}}
+    td: .text-black.text-shadow-white.text-h3.font-weight-black {{lang === 'ko'? "연구 프로젝트" : "Research Projects"}}
+  v-dialog(v-model="img", width="75%")
+    v-card.pa-2
+      v-img(:src="img", cover, width="100%")
   v-container
-    .text-h6
-    .text-h6(v-html="lang === 'ko' ? panel.ko : panel.en")
+    v-card.my-2.ma-auto.w-75(v-for="proj in projects", elevation="2")
+      v-card-title.bg-grey-lighten-2
+        span.font-weight-black {{proj.name}}
+        span.float-right.text-body-1 ({{proj.period}})
+      v-card-subtitle.my-2 {{proj.nameEn}}
+      v-card-subtitle.my-2(v-if="proj.funding")
+        span {{lang === "ko" ? "연구 지원:": "Funded by:"}}&nbsp; {{proj.funding}}
+        span.float-right {{proj.status}}
+      .d-flex.flex-no-wrap.justify-space-between.border-t
+        div
+          v-card-text
+            div.px-3.mx-3(v-html="parseMarkdown(proj.content)")
+          v-card-text(v-if="proj.workingWith.length")
+            span {{lang === "ko" ? "협력기관:": "Working with:"}}
+            v-chip.ma-2(v-for="work in proj.workingWith", :color="work.color ? work.color : 'black'", @click="open(work.link)")
+              v-avatar(v-if="work.img"): v-img(:src="work.img")
+              span {{work.name}}
+        v-img(v-if="proj.img", :src="proj.img", cover, width="40%", @click="openDialog(proj.img)")
 
 </template>
 
@@ -17,18 +36,25 @@ export default {
   props: ['lang'],
   data () {
     return {
-      panel: {
-        ko: '',
-        en: ''
-      }
+      projects: [],
+      img: false
     }
   },
   mounted() {
-    httpGet(['data', 'courses.md'], (data) => {
-      const [ko, en] = data.split('---')
-      this.panel.ko = window.marked.parse(ko)
-      this.panel.en = window.marked.parse(en)
+    httpGet(['data', 'project.json'], (data) => {
+      this.projects = data
     }, () => {})
+  },
+  methods: {
+    open(url) {
+      window.open(url, '_work')
+    },
+    openDialog(img) {
+      this.img = img
+    },
+    parseMarkdown(md) {
+      return window.marked.parse(md)
+    }
   }
 }
 </script>

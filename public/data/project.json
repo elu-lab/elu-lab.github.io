@@ -1,0 +1,36 @@
+[
+  {
+    "name": "설명가능한 자연어 수리논리적 추론 기술을 위한 의미 분석 기술 연구",
+    "nameEn": "Semantic Parsing Methods for Explainable Numerical Inference with Language",
+    "status": "연구 책임자",
+    "period": "2023-2025",
+    "content": "자연어 속 논리적 구조를 파악하는 의미 분석(Semantic Parsing) 기술과 이를 활용하여 설명을 생성하는 설명 생성(Explanation Generation) 기술을 현재의 인공신경망 기반 수리적 추론 (Numerical Reasoning) 기술에 통합, 주어진 자료의 이해부터 추론까지 전 단계를 설명할 수 있는 설명가능한 추론 (Explainable Inference) 기술을 획득한다.\n<br/><br/>\n\n- 주어진 문장, 그림, 표 등으로부터 논리적 구조를 파악하는 언어모델 기반 의미분석 기술 연구\n- 의미분석의 결과를 사람이 해석할 수 있는 자연어 문장으로 되돌리는 언어모델 기반 설명 생성 기술 연구\n- 의미분석과 설명생성 단계를 거치면서 추론을 수행하는 수리적 추론 기술 연구",
+    "funding": "",
+    "workingWith": [
+      { "name": "서울대학교 인지컴퓨팅연구실", "link": "http://cclab.snu.ac.kr", "img": "http://cclab.snu.ac.kr/static/images/logo.png", "color": "indigo" }
+    ],
+    "img": "/img/project/XMQA.png"
+  },
+  {
+    "name": "영상 자동 더빙을 위한 인공지능 더빙번역 기술 개발",
+    "nameEn": "Development of Automatic AI-powered video dubbing and translation technology",
+    "status": "기술개발 자문",
+    "period": "2023-2026",
+    "content": "최근 기계번역 기술이 일반적인 번역 작업에서 인간 번역가와 비슷하거나 그보다 더 나은 번역 결과물을 보이고 있으나, 종합적인 상황 이해나 제한 조건이 걸리는 더빙 작업에서는 아직 인간 수준의 번역을 수행하지 못하고 있음. 또한, 음성합성(TTS) 기술은 감정변화가 거의 없는 일반적인 음성합성 기술이 주로 연구되고 있으며, 성우를 대체할 수 있을 정도의 연기톤 음성합성 기술은 아직 연구의 초보단계임. 이 연구에서는 영화 또는 영상 기반의 콘텐츠를 위한 더빙 번역 기술과 연기톤 음성 합성 기술을 연구하고자 함.\n<br/><br/>\n\n1. 멀티모달 컨텍스트에 연결된 언어이해 기술 및 번역 기술의 개발\n2. 대본에 따라 연기를 수행할 수 있는 음성합성 기술의 개발",
+    "funding": "Hudson AI",
+    "workingWith": [
+      { "name": "Hudson AI", "link": "https://www.hudson-ai.com/", "color": "purple", "img": "https://static.wixstatic.com/media/b157ba_9536b76825f3402187c1f1936e82e448~mv2.png/v1/fill/w_247,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%EC%9E%90%EC%82%B0%202_4x.png" }
+    ],
+    "img": "https://dimg.donga.com/wps/NEWS/IMAGE/2023/03/28/118563299.1.png"
+  },
+  {
+    "name": "인공지능대학원 지원사업 (중앙대)",
+    "nameEn": "Artificial Intelligence Graduate School Program",
+    "funding": "과학기술정보통신부 (정보통신기획평가원)",
+    "period": "2023-2025",
+    "status": "공동 연구원",
+    "content": "중앙대학교 AI대학원은 '인류사회에 기여하는 AI인재 양성'이라는 비전 하에, 창의, 개방, 혁신 및 윤리 역량을 함양한 AI 연구자 및 전문인재를 육성하기 위한 석박사과정 인력양성 사업임. 대학원은 단순히 학생들이 AI에 대한 전문 지식을 습득하는 것을 넘어, 타 학문 또는 산업과의 융합에 적극적인 다빈치형 인재를 양성하기 위해 노력하고 있음.",
+    "workingWith": [],
+    "img": "https://aigs.cau.ac.kr/images/img-vision.png"
+  }
+]

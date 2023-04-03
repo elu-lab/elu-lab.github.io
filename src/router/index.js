@@ -47,7 +47,7 @@ const routes = [
         component: () => import(/* webpackChunkName: "contact" */ '@/views/Course.vue'),
       },
       {
-        path: ':lang/research',
+        path: ':lang/project',
         name: 'Project',
         props: true,
         // route level code-splitting

@@ -21,6 +21,7 @@ export default {
       tabs: [
         {path: '', ko: '소개', en: 'About'},
         {path: '/Prof./Bugeun/Kim', ko: '사람들', en: 'Team'},
+        {path: '/project', ko: '프로젝트', en: 'Projects'},
         {path: '/pub', ko: '논문', en: 'Papers'},
         {path: '/course', ko: '강의', en: 'Courses'},
         {path: '/contact', ko: '문의하기', en: 'Contact'},
