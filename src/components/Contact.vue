@@ -16,7 +16,8 @@ div
               span Room #428, Building #310, Chung-Ang University
               p.text-grey.text-body-1 84, Heukseok-ro, Dongjak-gu, Seoul 06974, Republic of Korea
             br
-            v-img(src="https://www.cau.ac.kr/cau/img/about/caupusmap/map.png")
+            Map
+      v-img(src="https://www.cau.ac.kr/cau/img/about/caupusmap/map.png")
       .v-col-12.v-col-md-6
         v-card(height="100%")
           v-card-text
@@ -38,9 +39,11 @@ div
 
 <script>
 import {httpGet} from "@/util";
+import Map from "./Map.vue";
 
 export default {
   name: "Contact",
+  components: { Map },
   props: ['lang'],
   data () {
     return {

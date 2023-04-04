@@ -1085,6 +1085,18 @@ levn@^0.4.1:
     prelude-ls "^1.2.1"
     type-check "~0.4.0"
 
+load-script-once@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/load-script-once/-/load-script-once-2.0.1.tgz#9aee85db9817452501106bfefd086090c43af0dc"
+  integrity sha512-kiOI7KEUqjbbFNmau4xZ1ZFDA7HjeYvtE91V68jJ/rcvNXnT2GLfz5Wz8geCu3Ug5kwMYZf4eHxsG5/c+sQP1Q==
+  dependencies:
+    load-script "~1.0.0"
+
+load-script@~1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/load-script/-/load-script-1.0.0.tgz#0491939e0bee5643ee494a7e3da3d2bac70c6ca4"
+  integrity sha512-kPEjMFtZvwL9TaZo0uZ2ml+Ye9HUMmPwbYRJ324qF9tqMejwykJ5ggTyvzmrbBeapCAbk98BSbTeovHEEP1uCA==
+
 loader-utils@^1.1.0:
   version "1.4.2"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-1.4.2.tgz#29a957f3a63973883eb684f10ffd3d151fec01a3"
@@ -1724,6 +1736,13 @@ void-elements@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-3.1.0.tgz#614f7fbf8d801f0bb5f0661f5b2f5785750e4f09"
   integrity sha512-Dhxzh5HZuiHQhbvTW9AMetFfBHDMYpo23Uo9btPXgdYP+3T5S+p+jgNy7spra+veYhBP2dCSgxR/i2Y02h5/6w==
+
+vue-daum-map@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/vue-daum-map/-/vue-daum-map-1.1.0.tgz#529d803739b5d00316f0cb99c2d0cbee15ebfbdf"
+  integrity sha512-a8MuZuRxSD9KGV6zMwrp1qFACNaUvrpTYdBPYNwvq0JnVUoWAi9FPN2sNxaPAfpq3yeYKGeRxgUwxPe0BbZLyg==
+  dependencies:
+    load-script-once "^2.0.1"
 
 vue-eslint-parser@^9.0.1:
   version "9.1.0"
