@@ -8,10 +8,16 @@
 import { loadFonts } from './webfontloader'
 import vuetify from './vuetify'
 import router from '../router'
+import VueGtag from "vue-gtag"
 
 export function registerPlugins (app) {
   loadFonts()
   app
     .use(vuetify)
     .use(router)
+    .use(VueGtag, {
+      config: { 
+        id: "G-89DJ3XMCHN",
+      },
+    }, router)
 }
