@@ -17,7 +17,7 @@ export default {
   name: "AppBar",
   data () {
     return {
-      isKorean: true,
+      isKorean: false,
       tabs: [
         {path: '', ko: '소개', en: 'About'},
         {path: '/Prof./Bugeun/Kim', ko: '사람들', en: 'Team'},
