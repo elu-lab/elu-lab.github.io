@@ -8,7 +8,7 @@ const routes = [
     children: [
       {
         path: '',
-        redirect: 'ko',
+        redirect: 'en',
       },
       {
         path: ':lang',
