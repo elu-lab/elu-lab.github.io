@@ -1,6 +1,7 @@
 <template lang="pug">
 v-app-bar(flat, color='indigo-darken-3', elevation=1, density="compact")
   v-app-bar-title
+    v-img(src="/white-LI.png", height="100%")
     router-link.text-white.text-decoration-none(:to="'/' + lang", active-class="indigo-lighten-2") ELU Lab @ CAU
   template(v-slot:extension)
     v-spacer

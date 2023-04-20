@@ -22,7 +22,7 @@ div
         v-card(height="100%")
           v-card-text
             h2(v-if="lang === 'ko'") 학부 인턴, 석박사과정 학생 모집중
-            h2(v-else) Recruit: Internship/MS & Ph.D students
+            h2(v-else) Recruit: Undergraudate Intern / MS & Ph.D students
           v-card-text.margin-inside(v-html="lang === 'ko' ? panel.ko : panel.en")
     v-expansion-panels.my-2.d-none.d-sm-block(elevation="2")
       v-expansion-panel(:title="lang === 'ko' ? '지원서 보기' : 'Expand the application form'")

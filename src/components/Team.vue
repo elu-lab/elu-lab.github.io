@@ -6,9 +6,9 @@ div
   v-container
     v-banner.my-5(icon="mdi-bullhorn", color="red")
       v-banner-text: p.text-h5.text-red-darken-3
-        | 연구실의 첫 학부생 인턴, 석박사과정 학생을 모집하고 있습니다. '문의하기'를 눌러 문의해주세요!
+        | 연구실의 학부생 인턴과 석박사과정 학생을 모집하고 있습니다. '문의하기'를 눌러 문의해주세요!
         br
-        | We're looking for the first MS/PhD students and interns who are interested in our study!
+        | We're looking for undergraduate interns and MS/PhD students who are interested in our study!
         br
         | If you're interested in our study, please contact advisor through 'Contact' tab.
 

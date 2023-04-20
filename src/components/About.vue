@@ -73,7 +73,7 @@ div
         | 그러한 연구들이 쌓이다 보면, 언젠가 사회에 도움이 되는 기술들을 만들 수 있을테니까요.
     .mt-10
       p.text-h6.text-red-accent-3.text-center(v-if="lang === 'ko'")
-        | 연구실의 첫 학부생 인턴, 석박사과정 학생을 모집하고 있습니다.
+        | 연구실의 학부생 인턴과 석박사과정 학생을 모집하고 있습니다.
         br
         | 관심이 있다면&nbsp;
         a(href="https://forms.gle/u32h6cBpgZNPhLAq6") 설문
@@ -81,7 +81,7 @@ div
         a(href="/#/ko/contact") [문의하기]
         |를 눌러 문의해주세요.
       p.text-h6.text-red-accent-3.text-center(v-else)
-        | We're looking for the first MS/PhD students and interns who are interested in our study!
+        | We're looking for undergraduate interns and MS/PhD students who are interested in our study!
         br
         | If you're interested in our study, please fill&nbsp;
         a(href="https://forms.gle/u32h6cBpgZNPhLAq6") the application form&nbsp;
