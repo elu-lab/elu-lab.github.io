@@ -1,6 +1,6 @@
 <template lang="pug">
 v-app-bar(flat, color='indigo-darken-3', elevation=1, density="compact")
-  template(v-slot:prepend): v-img(src="/white-LI.png", height="28px")
+  template(v-slot:prepend): v-img(src="/white-LI.png", height="28px", min-width="28px")
   v-app-bar-title
     router-link.text-white.text-decoration-none(:to="'/' + lang", active-class="indigo-lighten-2") ELU Lab @ CAU
   template(v-slot:extension)
