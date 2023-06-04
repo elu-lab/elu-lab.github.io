@@ -14,7 +14,7 @@
     - etc.
 
 ### Affiliation
-- *2023.3 - Present*, Associate Professor, Department of AI, Chung-Ang University (Seoul, Korea).
+- *2023.3 - Present*, Assistant Professor, Department of AI, Chung-Ang University (Seoul, Korea).
 - *2022.3 - 2023.2*, Post-doc., Seoul National University (Seoul, Korea)
 
 ### Education
