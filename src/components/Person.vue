@@ -4,20 +4,12 @@ div
     td: img(src="/img/parallex/team.png", style="height:20vh")
     td: .text-white.text-shadow.text-h3.font-weight-black.text-center {{lang === 'ko'? "연구실 사람들" : "Our Team"}}
   v-container
-    v-banner.my-5(icon="mdi-bullhorn", color="red")
-      v-banner-text
-        p.text-h6.text-red-darken-3(v-if="lang === 'ko'")
-          | 연구실의 학부생 인턴 및 석박사과정 학생을 모집하고 있습니다. '문의하기'에서 관련 내용을 확인해주세요!
-        p.text-h6.text-red-darken-3(v-else)
-          | We're looking for undergraduate interns and MS/PhD students who are interested in our study!
-          br
-          | If you're interested in our study, please contact advisor through 'Contact' tab.
-
     v-row.mt-6
-      .v-col-12.v-col-md-auto
-        v-img(lazy-src='/img/noimg.svg', :src="imagePath", width="250px")
-      .v-col-12.v-col-md-auto.margin-inside(v-html="lang === 'ko' ? biography.ko : biography.en")
-      .v-col-12
+      .v-col-12.v-col-sm-3.v-col-md-2
+        v-img.rounded(lazy-src='/img/noimg.svg', :src="imagePath", cover,
+          gradient="135deg, rgba(255,255,255,.1) 0%, rgba(255,255,255,.3) 15%, rgba(255,255,255,0) 50%, rgba(255,255,255,.3) 85%, rgba(100,100,100,.1) 100%")
+      .v-col-12.v-col-sm-9.v-col-md-10.margin-inside(v-html="lang === 'ko' ? biography.ko : biography.en")
+      .v-col-12(v-if="publications.length")
         v-divider.my-5
         h3 {{lang === 'ko' ? "논문/특허 목록" : "Publications & Patents"}}
         v-list(density="compact")
@@ -38,7 +30,9 @@ div
               v-spacer
               v-icon(size='small', color="success", v-if="item.DOI") mdi-link
               v-icon(size='small', color='grey', v-else) mdi-link-off
-
+      .v-col-12(v-else)
+        v-divider.my-5
+        h3.text-grey {{lang === 'ko' ? "아직 출판된 논문 없음" : "No publications yet"}}
 </template>
 
 <script>

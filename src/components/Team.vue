@@ -4,36 +4,25 @@ div
     td: img(src="/img/parallex/team.png", style="height:20vh")
     td: .text-white.text-shadow.text-h3.font-weight-black.text-center {{lang === 'ko'? "연구실 사람들" : "Our Team"}}
   v-container
-    v-banner.my-5(icon="mdi-bullhorn", color="red")
-      v-banner-text: p.text-h5.text-red-darken-3
-        | 연구실의 학부생 인턴과 석박사과정 학생을 모집하고 있습니다. '문의하기'를 눌러 문의해주세요!
-        br
-        | We're looking for undergraduate interns and MS/PhD students who are interested in our study!
-        br
-        | If you're interested in our study, please contact advisor through 'Contact' tab.
-
     v-row
       .v-col-12
-        h1.text-indigo-accent-2 {{lang === 'ko' ? "현재 구성원" : "Present Members"}}
-      .v-col-2(v-for="item in presentMembers")
-        v-card.rounded-5(elevation=3, @click="$router.push('/' + lang + '/' + item.path)")
-          v-img.align-end(lazy-src='/img/noimg.svg', :src="item.image", aspect-ratio='0.75', cover)
-          v-card-actions
-            .font-weight-black.text-h6(v-if="lang === 'en'") {{getRole(item.role, 'en')}} {{item.fullName}}
-            .font-weight-black.text-h6(v-else) {{item.koreanName}} {{item.role}}
-            v-spacer
-            v-btn(icon="mdi-card-account-details")
+        h1.text-indigo-accent-2 {{lang === 'ko' ? "현재 구성원" : "Current Members"}}
+      .v-col-6.v-col-sm-4.v-col-md-3.v-col-lg-2(v-for="item in presentMembers")
+        v-card(elevation=3, rounded, hover, @click="$router.push('/' + lang + '/' + item.path)")
+          v-img.align-end(lazy-src='/img/noimg.svg', :src="item.image", aspect-ratio='0.75', cover,
+            gradient="to top, rgba(100,100,100,1) 0%, rgba(100,100,100,.5) 15%, rgba(100,100,100,0) 100%" )
+            p.ml-3.font-weight-black.text-border-white.text-h6(:class="getColor(item.role)") {{getRole(item.role, lang)}}
+            p.ml-3.text-white.font-weight-black.text-border-white.text-h4 {{lang === 'en' ? item.fullName : item.koreanName}}
 
       .v-col-12(v-if="alumniMembers.length")
+        v-divider
         h1.text-indigo-accent-2 {{lang === 'ko' ? "졸업/퇴직한 구성원" : "Alumni Members"}}
-      .v-col-2(v-for="item in alumniMembers")
-        v-card.rounded-5(elevation=3, @click="$router.push('/' + lang + '/' + item.path)")
-          v-img.align-end(lazy-src='/img/noimg.svg', :src="item.image", aspect-ratio='0.75', cover)
-          v-card-actions
-            .font-weight-black.text-h6(v-if="lang === 'en'") {{getRole(item.role, 'en')}} {{item.fullName}}
-            .font-weight-black.text-h6(v-else) {{item.koreanName}} {{item.role}}
-            v-spacer
-            v-btn(icon="mdi-card-account-details")
+      .v-col-6.v-col-sm-4.v-col-md-3.v-col-lg-2(v-for="item in alumniMembers")
+        v-card(elevation=3, rounded, hover, @click="$router.push('/' + lang + '/' + item.path)")
+          v-img.align-end(lazy-src='/img/noimg.svg', :src="item.image", aspect-ratio='0.75', cover,
+            gradient="to top, rgba(100,100,100,1) 0%, rgba(100,100,100,.5) 15%, rgba(100,100,100,0) 100%")
+            p.ml-3.font-weight-black.text-border-white.text-h6(:class="getColor(item.role)") {{getRole(item.role, lang)}}
+            p.ml-3.text-white.font-weight-black.text-border-white.text-h4 {{lang === 'en' ? item.fullName : item.koreanName}}
 </template>
 
 <script>
@@ -80,13 +69,22 @@ export default {
   methods: {
     getRole(rolename, lang) {
       if (lang === 'en') return rolename
-      if (rolename === 'Prof.') return '교수'
+      if (rolename === 'Prof.') return '지도교수'
       if (rolename === 'Researcher') return '연구원'
       if (rolename === 'Ph.D student') return '박사과정'
       if (rolename === 'M.S. student') return '석사과정'
       if (rolename === 'Ph.D.') return '박사'
       if (rolename === 'M.S.') return '석사'
       return '학부생 인턴'
+    },
+    getColor(rolename) {
+      return 'text-indigo-lighten-4'
+      // if (rolename === 'Prof.') return 'text-indigo-lighten-2'
+      // if (rolename === 'Researcher') return 'text-indigo-lighten-2'
+      // if (rolename === 'Ph.D student') return 'text-amber-lighten-2'
+      // if (rolename === 'M.S. student') return 'text-grey-lighten-2'
+      // if (rolename === 'Ph.D.') return 'text-amber-lighten-2'
+      // if (rolename === 'M.S.') return 'text-grey-lighten-2'
     },
     openLink (item) {
       if (item.DOI) window.open('https://doi.org/' + item.DOI)
@@ -103,5 +101,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" scoped>
+.text-border-white
+  text-shadow #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, #000 0px 0px 1px, white 0 0 2px
 </style>

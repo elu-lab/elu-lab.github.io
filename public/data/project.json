@@ -9,7 +9,8 @@
     "workingWith": [
       { "name": "서울대학교 인지컴퓨팅연구실", "link": "http://cclab.snu.ac.kr", "img": "http://cclab.snu.ac.kr/static/images/logo.png", "color": "indigo" }
     ],
-    "img": "/img/project/XMQA.png"
+    "img": "/img/project/XMQA.png",
+    "people": ["Bugeun Kim", "Hyeonchu Park", "Byungjun Kim"]
   },
   {
     "name": "영상 자동 더빙을 위한 인공지능 더빙번역 기술 개발",
@@ -21,7 +22,8 @@
     "workingWith": [
       { "name": "Hudson AI", "link": "https://www.hudson-ai.com/", "color": "purple", "img": "https://static.wixstatic.com/media/b157ba_9536b76825f3402187c1f1936e82e448~mv2.png/v1/fill/w_247,h_38,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/%EC%9E%90%EC%82%B0%202_4x.png" }
     ],
-    "img": "https://dimg.donga.com/wps/NEWS/IMAGE/2023/03/28/118563299.1.png"
+    "img": "https://dimg.donga.com/wps/NEWS/IMAGE/2023/03/28/118563299.1.png",
+    "people": ["Bugeun Kim", "Ro-hoon Oh", "Jihwan Seol"]
   },
   {
     "name": "인공지능대학원 지원사업 (중앙대)",
