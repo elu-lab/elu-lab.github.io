@@ -5,47 +5,47 @@
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-   <loc>https://elu-lab.github.io/</loc>
+   <loc>https://www.elulab.kr/</loc>
    <lastmod>2023-04-05</lastmod>
    <changefreq>monthly</changefreq>
 </url>
 <url>
-   <loc>https://elu-lab.github.io/#/ko</loc>
+   <loc>https://www.elulab.kr/#/ko</loc>
    <lastmod>2023-04-05</lastmod>
    <changefreq>monthly</changefreq>
 </url>
 <url>
-   <loc>https://elu-lab.github.io/#/en</loc>
+   <loc>https://www.elulab.kr/#/en</loc>
    <lastmod>2023-04-05</lastmod>
    <changefreq>monthly</changefreq>
 </url>
 <url>
-   <loc>https://elu-lab.github.io/#/ko/project</loc>
+   <loc>https://www.elulab.kr/#/ko/project</loc>
    <lastmod>2023-04-05</lastmod>
    <changefreq>monthly</changefreq>
 </url>
 <url>
-   <loc>https://elu-lab.github.io/#/en/project</loc>
+   <loc>https://www.elulab.kr/#/en/project</loc>
    <lastmod>2023-04-05</lastmod>
    <changefreq>monthly</changefreq>
 </url>
 <url>
-   <loc>https://elu-lab.github.io/#/ko/pub</loc>
+   <loc>https://www.elulab.kr/#/ko/pub</loc>
    <lastmod>2023-04-05</lastmod>
    <changefreq>monthly</changefreq>
 </url>
 <url>
-   <loc>https://elu-lab.github.io/#/en/pub</loc>
+   <loc>https://www.elulab.kr/#/en/pub</loc>
    <lastmod>2023-04-05</lastmod>
    <changefreq>monthly</changefreq>
 </url>
 <url>
-   <loc>https://elu-lab.github.io/#/ko/team</loc>
+   <loc>https://www.elulab.kr/#/ko/team</loc>
    <lastmod>2023-04-05</lastmod>
    <changefreq>monthly</changefreq>
 </url>
 <url>
-   <loc>https://elu-lab.github.io/#/en/team</loc>
+   <loc>https://www.elulab.kr/#/en/team</loc>
    <lastmod>2023-04-05</lastmod>
    <changefreq>monthly</changefreq>
 </url>
