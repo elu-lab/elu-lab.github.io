@@ -3,3 +3,5 @@ Oh,Ro-Hoon,오로훈,M.S. student,과정중
 Park,Hyeonchu,박현주,M.S. student,과정중
 Kim,Byungjun,김병준,Undergrad intern,과정중
 Seol,Jihwan,설지환,Undergrad intern,과정중
+Choi,Jun Hyuk,최준혁,Undergrad intern,과정중
+Kim,Nayeon,김나연,Undergrad intern,과정중

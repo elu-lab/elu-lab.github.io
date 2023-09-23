@@ -4,11 +4,11 @@ div
     td: img(src="/img/parallex/research.png", style="height:20vh")
     td
       .text-black.text-shadow-white.text-h3.font-weight-black(v-if="lang === 'ko'")
-        span.d-inline-block 연구
-        span.d-inline-block 프로젝트
+        span.d-inline-block.mr-1 연구
+        span.d-inline-block 주제
       .text-black.text-shadow-white.text-h3.font-weight-black(v-else)
-        span.d-inline-block Research
-        span.d-inline-block Projects
+        span.d-inline-block.mr-1 Research
+        span.d-inline-block Themes
   v-dialog(v-model="img", width="75%")
     v-card.pa-2
       v-img(:src="img", cover, width="100%")

@@ -53,10 +53,10 @@ export default {
     }
   },
   mounted() {
-    this.imagePath = '/img/members/' + this.given.toLowerCase() + '-' + this.family.toLowerCase() + '.jpg'
+    this.imagePath = '/img/members/' + this.given.toLowerCase().replace(' ', '-') + '-' + this.family.toLowerCase().replace(' ', '-') + '.jpg'
     this.person = this.given + ' ' + this.family
 
-    httpGet(['data', 'members', this.given.toLowerCase() + '-' + this.family.toLowerCase() + '.md'],
+    httpGet(['data', 'members', this.given.toLowerCase().replace(' ', '-') + '-' + this.family.toLowerCase().replace(' ', '-') + '.md'],
       (data) => {
         const [en, ko] = data.split('---')
         this.biography = {

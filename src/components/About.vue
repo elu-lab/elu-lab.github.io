@@ -24,20 +24,20 @@ div
         span.font-weight-light Specifically, we focus on these areas:
       ul.mx-5
         li.my-2
-          b.text-blue-accent-4 Inference
-          span.font-weight-light : NLP technology that can do logical or mathematical inference over given textual data.
+          b.text-blue-accent-4 Explainable LLM
+          span.font-weight-light : Studies that identify the capabilities of LLM technology, including GPT, and suggest some improvements
           br
-          span.font-weight-light.text-caption.text-lg-body-1 E.g., Mathematical Question Answering, Textual Entailment, Natural language Inference, etc.
+          span.font-weight-light.text-caption.text-lg-body-1 E.g., Generative Agents, Machine-generated Contents Detection, etc.
         li.my-2
-          b.text-blue-accent-3 Explainability
-          span.font-weight-light : NLP-based agents that can explain its inference steps interactively with human language.
+          b.text-blue-accent-3 Language-based interaction
+          span.font-weight-light : Research for improving the quality of language-driven interaction between humans and AI
           br
-          span.font-weight-light.text-caption.text-lg-body-1 E.g., Semantic Parsing, Explanation Generation, etc.
+          span.font-weight-light.text-caption.text-lg-body-1 E.g., Text-to-Speech, Speech synthesis, etc.
         li.my-2
-          b.text-blue-accent-2 Human-AI Interaction
-          span.font-weight-light : Research about language-based interaction between a human and an AI agent.
+          b.text-blue-accent-2 Language understanding
+          span.font-weight-light : Research for making LLM do mathematical/logical reasoning based on textual data.
           br
-          span.font-weight-light.text-caption.text-lg-body-1 E.g., Interactions on Chatbots, etc.
+          span.font-weight-light.text-caption.text-lg-body-1 E.g., Mathematical Proving, etc.
       p.my-2.font-weight-light
         | As the world is changing rapidly, we also welcome other research topics which are not listed above.
         | If that's related to natural language processing, any research topic you want is fine.
@@ -53,27 +53,29 @@ div
         span.font-weight-light 특히, 우리 연구실은 아래와 같은 주제에 관심을 두고 있습니다.
       ul.mx-5
         li.my-2
-          b.text-blue-accent-4 추론능력
-          span.font-weight-light : 텍스트 등 데이터를 기반으로 논리적/수학적인 추론을 할 수 있는 자연어처리 연구
+          b.text-blue-accent-4 설명가능한 기술
+          span.font-weight-light : GPT를 비롯한 LLM 기술의 능력을 파악하고 개선방안을 제시하는 연구
           br
-          span.font-weight-light.text-caption.text-lg-body-1 예) 수학적 질의응답(Mathematical Question Answering), 텍스트 연역 확인(Textual Entailment), 자연어 추론(Natural language inference) 등
+          span.font-weight-light.text-caption.text-lg-body-1 예) 생성형 에이전트(Generative Agent), 생성된 콘텐츠 탐지 (Machine-generated Contents Detection) 등
         li.my-2
-          b.text-blue-accent-3 설명능력
-          span.font-weight-light : 추론 단계를 사람에게 글/말로 설명할 수 있는 자연어처리 인공지능 연구
+          b.text-blue-accent-3 언어적 소통 기술
+          span.font-weight-light : 인간과 AI 사이의 언어 기반 상호작용에 필요한 기술 연구
           br
-          span.font-weight-light.text-caption.text-lg-body-1 예) 의미 분석(Semantic parsing), 설명 생성(Explanation generation) 등
+          span.font-weight-light.text-caption.text-lg-body-1 예) 텍스트기반 음성 합성 (Text-to-speech, Speech synthesis) 등
         li.my-2
-          b.text-blue-accent-2 인간-인공지능 상호작용
-          span.font-weight-light : 자연어처리 인공지능과 사람 사이의 상호작용에 관한 연구
+          b.text-blue-accent-2 언어 이해 기술
+          span.font-weight-light : 텍스트 등 데이터를 기반으로 수리적/논리적 추론을 수행하는 기술 연구
           br
-          span.font-weight-light.text-caption.text-lg-body-1 예) 챗봇(Chatbot) 상호작용 관련 연구 등
+          span.font-weight-light.text-caption.text-lg-body-1 예) 수학 증명 (Mathematical Proving) 등
       p.my-2.font-weight-light
-        | 세상이 빠르게 변하고 있기 때문에, 우리는 위에 적힌 세 분야 외의 다른 분야 연구주제도 환영합니다.
-        | 자연어처리와 관련이 있다면 학생여러분이 원하는 어떤 연구라도 좋습니다.
+        | 세상이 빠르게 변화하고 있어, 위의 연구 주제는 언제든지 변화할 수 있습니다.
+        | 때문에, 우리는 위에 적힌 세 분야 외의 다른 분야 연구주제도 환영합니다.
+        br
+        | 자연어처리나 음성합성과 관련이 있다면 학생여러분이 원하는 어떤 연구라도 좋습니다.
         | 그러한 연구들이 쌓이다 보면, 언젠가 사회에 도움이 되는 기술들을 만들 수 있을테니까요.
     .mt-10
       p.text-h6.text-red-accent-3.text-center(v-if="lang === 'ko'")
-        | 연구실의 학부생 인턴과 석박사과정 학생을 모집하고 있습니다.
+        | 연구실의 학부생 인턴(스터디 포함)을 모집하고 있습니다.
         br
         | 관심이 있다면&nbsp;
         a(href="https://forms.gle/u32h6cBpgZNPhLAq6") 설문
@@ -81,7 +83,7 @@ div
         a(href="/#/ko/contact") [문의하기]
         |를 눌러 문의해주세요.
       p.text-h6.text-red-accent-3.text-center(v-else)
-        | We're looking for undergraduate interns and MS/PhD students who are interested in our study!
+        | We're looking for undergraduate interns (or students) who are interested in our study!
         br
         | If you're interested in our study, please fill&nbsp;
         a(href="https://forms.gle/u32h6cBpgZNPhLAq6") the application form&nbsp;
