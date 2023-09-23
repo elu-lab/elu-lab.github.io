@@ -4,7 +4,13 @@ div
     td: .text-black.text-shadow-white.text-h3.font-weight-black.text-center {{lang === 'ko'? "강의" : "Courses"}}
     td.text-right: img(src="/img/parallex/course.png", style="height:20vh")
   v-container
-    v-data-table(:headers="headers", :items="courses", item-value="idx", :item-title="courseTitle" items-per-page="10")
+    v-table(fixed-header)
+      thead
+        tr
+          th.text-left(v-for="header in headers") {{header.title}}
+      tbody
+        tr(v-for="item in courses")
+          td(v-for="header in headers") {{item[header.key]}}
 </template>
 
 <script>
