@@ -1,15 +1,15 @@
 ### 필수조건
-1. Python 등 **프로그래밍 언어를 읽고** (느리더라도) 이해할 수 있어야 합니다.
-2. 한국어/영어 등 **목표하는 언어**에 대한 초보적인 이해가 필요합니다.
-3. **선형대수학**, **통계학/확률론**, **고등학교 수준의 미적분학** 지식이 약간 필요합니다.
+1. Python 및 PyTorch를 활용한 언어모델/음성합성 모델 구현을 능숙하게 다룰 수 있어야 합니다.
+2. 대학 수준의 선형대수학, 통계학/확률론, 미적분학(공학수학 등) 지식이 반드시 필요합니다.
+3. 연구실에서 수행중인 특정 연구 주제에 대한 의지와 관심, 그리고 적극성을 확인할 수 있는 학생을 선발합니다.
 
 ### 우대조건
-1. 연구에 대한 **의지와 관심, 그리고 적극성**이 보이는 학생을 우대합니다.
-2. 석사과정의 경우, 본인이 원하는 연구 주제가 있거나, 연구실 내 과제에서 필요한 경험이 있다면 우대합니다.
-3. 박사과정의 경우, 본인이 원하는 연구 주제가 큰 틀에서 구상되어 있는 사람을 우대합니다.
-4. **전공 무관**하게 모집하고 있으나, 연구 주제별로 다음과 같은 경험을 우대합니다:
-   - **Core NLP research**: 컴퓨터공학, 언어학, 수학, 논리학 관련 전공자 우대 / 번역 또는 음성신호처리 경험 우대
-   - **Human-AI interaction research**: 심리학, 교육학 관련 전공자 우대 / 교육 또는 번역 경험자 우대
+전공 무관하게 모집하고 있으나, 연구실 연구주제의 원활한 진행을 위해서 특정 주제별 우대조건을 지정하고 있습니다.
+2023년 9월 현재는 연구 주제별로 다음과 같은 경험을 우대합니다.
+- 생성형 에이전트: 심리학/사회학 전공자 우대 또는 Phaser 구현 경험자 우대
+- 생성된 콘텐츠 탐지: 언어처리 경험자 우대
+- 텍스트 기반 음성합성: 음성신호처리 경험자 또는 전기/전자공학 전공자 우대
+- 수학 증명: 수학 전공자 우대
 
 ### 관심있는 분들은 [아래 설문](https://forms.gle/u32h6cBpgZNPhLAq6)에 답하거나, [bgnkim at cau.ac.kr](mailto:bgnkim_at_cau.ac.kr)로 메일을 보내주세요.
 - 간단한 자기소개와 원하는 연구 방향, 연구실에 기대하는 것 등등을 적어 보내면 되고,
@@ -17,20 +17,18 @@
 - 별도로 요청하기 전에는 성적표나 기타 활동 내역 등등은 보내지 않아도 됩니다.
 
 ---
+### Prerequisites
+1. Proficient in implementing language/speech models using Python and PyTorch.
+2. University-level knowledge of linear algebra, statistics/probability theory, and calculus (or engineering mathematics)
+3. Students with proofs about their commitment, interest, and activeness to one of the specific research topic in our lab.
 
-### Requirements
-1. Python programming skills (Can you read and understand a Python code?)
-2. Understanding about human languages
-3. Linear algebra, Statistics/Probability theory, Calculus (grade 12)
-
-### Preferences
-1. We prefer students who show willingness, interest, and initiative in research.
-2. Master's program: We prefer those who have their own research topic or specific experiences required for our ongoing research.
-3. Ph.D. program: We prefer those who have an idea of their own research topic.
-4. We prefer students who can speak Korean.
-5. We prefer following experiences:
-   - **Core NLP research**: Computer science, Linguistics, Mathematics, Logic major / Translation or signal processing experience
-   - **Human-AI interaction research**: Psychology, Education major / Education or translation experience
+### preferential conditions
+We are recruiting regardless of major, but we designate preferential conditions for each specific topic for the smooth progress of research topics in the laboratory.
+As of September 2023, the following experiences are preferred for each research topic.
+- Generative agents: psychology/sociology majors or experience in Phaser development
+- Produced content detection: natural language processing experiences
+- Text-based speech synthesis: experience in signal processing or electrical/electronic engineering majors
+- Proof of Mathematics: math majors
 
 ### If you are interested, please fill [the application form](https://forms.gle/u32h6cBpgZNPhLAq6) below or send an email to [bgnkim at cau.ac.kr](mailto:bgnkim_at_cau.ac.kr).
 - In the mail, you may include a brief self-introduction, your desired research topic, and your expectation about our lab.
