@@ -50,7 +50,7 @@ export default {
           fullName: given + ' ' + family,
           koreanName: korean,
           role: role,
-          image: '/img/members/' + given.toLowerCase() + '-' + family.toLowerCase() + '.jpg',
+          image: '/img/members/' + given.toLowerCase().replace(' ', '-') + '-' + family.toLowerCase().replace(' ', '-') + '.jpg',
           path: role + '/' + given + '/' + family,
           isAlumni: status === '졸업'
         }
