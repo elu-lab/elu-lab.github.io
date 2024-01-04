@@ -5,13 +5,13 @@
 
 ### 우대조건
 전공 무관하게 모집하고 있으나, 연구실 연구주제의 원활한 진행을 위해서 특정 주제별 우대조건을 지정하고 있습니다.
-2023년 9월 현재는 연구 주제별로 다음과 같은 경험을 우대합니다.
-- 생성형 에이전트: 심리학/사회학 전공자 우대 또는 Phaser 구현 경험자 우대
+2024년 1월 현재는 연구 주제별로 다음과 같은 경험을 우대합니다.
+- 생성형 에이전트: 심리학/사회학 전공자 우대 또는 비전-언어 결합 경험자 우대
 - 생성된 콘텐츠 탐지: 언어처리 경험자 우대
 - 텍스트 기반 음성합성: 음성신호처리 경험자 또는 전기/전자공학 전공자 우대
 - 수학 증명: 수학 전공자 우대
 
-### 관심있는 분들은 [아래 설문](https://forms.gle/u32h6cBpgZNPhLAq6)에 답하거나, [bgnkim at cau.ac.kr](mailto:bgnkim_at_cau.ac.kr)로 메일을 보내주세요.
+### 관심있는 분들은 [아래 설문](https://forms.gle/u32h6cBpgZNPhLAq6)에 답해주세요.
 - 간단한 자기소개와 원하는 연구 방향, 연구실에 기대하는 것 등등을 적어 보내면 되고,
    - 박사과정에 지원하는 경우) 출판한 논문들이 있다면, DOI 목록을 보내주세요.
 - 별도로 요청하기 전에는 성적표나 기타 활동 내역 등등은 보내지 않아도 됩니다.
@@ -30,6 +30,6 @@ As of September 2023, the following experiences are preferred for each research 
 - Text-based speech synthesis: experience in signal processing or electrical/electronic engineering majors
 - Proof of Mathematics: math majors
 
-### If you are interested, please fill [the application form](https://forms.gle/u32h6cBpgZNPhLAq6) below or send an email to [bgnkim at cau.ac.kr](mailto:bgnkim_at_cau.ac.kr).
-- In the mail, you may include a brief self-introduction, your desired research topic, and your expectation about our lab.
+### If you are interested, please fill [the application form](https://forms.gle/u32h6cBpgZNPhLAq6) below.
+- In the response, you may include a brief self-introduction, your desired research topic, and your expectation about our lab.
    - For Ph.D program: If you have published some papers, please send us a list of DOIs.
