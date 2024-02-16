@@ -1,14 +1,14 @@
 ### 필수조건
 1. Python 및 PyTorch를 활용한 언어모델/음성합성 모델 구현을 능숙하게 다룰 수 있어야 합니다.
-2. 대학 수준의 선형대수학, 통계학/확률론, 미적분학(공학수학 등) 지식이 반드시 필요합니다.
+2. 대학 수준의 선형대수학, 통계학/확률론, 미적분학(공학수학 등) 지식이 필요합니다.
 3. 연구실에서 수행중인 특정 연구 주제에 대한 의지와 관심, 그리고 적극성을 확인할 수 있는 학생을 선발합니다.
 
 ### 우대조건
 전공 무관하게 모집하고 있으나, 연구실 연구주제의 원활한 진행을 위해서 특정 주제별 우대조건을 지정하고 있습니다.
 2024년 1월 현재는 연구 주제별로 다음과 같은 경험을 우대합니다.
-- 생성형 에이전트: 심리학/사회학 전공자 우대 또는 비전-언어 결합 경험자 우대
-- 생성된 콘텐츠 탐지: 언어처리 경험자 우대
-- 텍스트 기반 음성합성: 음성신호처리 경험자 또는 전기/전자공학 전공자 우대
+- LLM으로 생성된 텍스트 탐지: 학부 인공지능/컴퓨터공학/전산학/통계학 전공자 우대
+- 텍스트 기반 음성합성: 음성신호처리 경험자 또는 전기/전자공학/인공지능/컴퓨터공학/전산학 전공자 우대
+- 생성형 에이전트: 심리학/사회학 전공자 우대
 - 수학 증명: 수학 전공자 우대
 
 ### 관심있는 분들은 [아래 설문](https://forms.gle/u32h6cBpgZNPhLAq6)에 답해주세요.
@@ -25,9 +25,9 @@
 ### preferential conditions
 We are recruiting regardless of major, but we designate preferential conditions for each specific topic for the smooth progress of research topics in the laboratory.
 As of September 2023, the following experiences are preferred for each research topic.
-- Generative agents: psychology/sociology majors or experience in Phaser development
-- Produced content detection: natural language processing experiences
+- AI-Generated Text detection: natural language processing experiences
 - Text-based speech synthesis: experience in signal processing or electrical/electronic engineering majors
+- Generative agents: psychology/sociology majors or experience in Phaser development
 - Proof of Mathematics: math majors
 
 ### If you are interested, please fill [the application form](https://forms.gle/u32h6cBpgZNPhLAq6) below.
