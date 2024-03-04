@@ -1,4 +1,4 @@
-## Byungjun Kim (Undergrad. Intern)
+## Byungjun Kim (MS Student)
 
 - E-mail: [k36769 at cau.ac.kr](mailto:k36769_at_cau.ac.kr)
 - Github: [@bbijun](https://github.com/bbijun)
@@ -28,7 +28,7 @@
 - 2022, Engineer Information Processing, Human Resources Development Service of Korea
 
 ---
-## 김병준 (인턴)
+## 김병준 (석사과정)
 
 - 이메일: [k36769 at cau.ac.kr](mailto:k36769_at_cau.ac.kr)
 - Github: [@bbijun](https://github.com/bbijun)
