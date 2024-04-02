@@ -32,7 +32,7 @@ div
               span {{work.name}}
           v-card-text
             span {{lang === "ko" ? "연구원:": "Researchers:"}}
-            v-chip.ma-2(v-for="person in proj.people", :color="work.color ? work.color : 'black'", @click="open(personalSiteOf(person))")
+            v-chip.ma-2(v-for="person in proj.people", color="gray-lighten-2", @click="open(personalSiteOf(person))")
               v-avatar: v-img(lazy-src='/img/noimg.svg', :src="imagePathOf(person)", cover)
               span {{person.replace('/', ' ')}}
         v-img.mx-auto.mb-2.mb-sm-0(v-if="proj.img", :src="proj.img", cover, width="40%", min-width="300px", max-width="500px", @click="openDialog(proj.img)")
