@@ -29,12 +29,12 @@ div
             span {{lang === "ko" ? "협력기관:": "Working with:"}}
             v-chip.ma-2(v-for="work in proj.workingWith", :color="work.color ? work.color : 'black'", @click="open(work.link)")
               v-avatar(v-if="work.img"): v-img(:src="work.img")
-              span {{work.name}}
+              span.ml-2 {{work.name}}
           v-card-text
             span {{lang === "ko" ? "연구원:": "Researchers:"}}
-            v-chip.ma-2(v-for="person in proj.people", color="gray-lighten-2", @click="open(personalSiteOf(person))")
+            v-chip.pa-1(v-for="person in proj.people", color="gray-lighten-2", @click="open(personalSiteOf(person))")
               v-avatar: v-img(lazy-src='/img/noimg.svg', :src="imagePathOf(person)", cover)
-              span {{person.replace('/', ' ')}}
+              span.ml-2 {{person.replace('/', ' ')}}
         v-img.mx-auto.mb-2.mb-sm-0(v-if="proj.img", :src="proj.img", cover, width="40%", min-width="300px", max-width="500px", @click="openDialog(proj.img)")
 
 </template>
@@ -67,7 +67,7 @@ export default {
       return window.marked.parse(md)
     },
     personalSiteOf(person) {
-      return '/' + lang + '/' + person
+      return '/' + this.lang + '/' + person;
     },
     imagePathOf(person) {
       return '/img/members/' + person.toLowerCase().replace(' ', '-').replace('/', '-') + '.jpg'
