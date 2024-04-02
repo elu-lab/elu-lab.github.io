@@ -43,7 +43,7 @@ import BibtexParser from "bibtex-parse";
 
 export default {
   name: "Person",
-  props: ['lang', 'role', 'given', 'family'],
+  props: ['lang', 'given', 'family'],
   data () {
     return {
       imagePath: '',

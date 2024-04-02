@@ -8,7 +8,7 @@
     "funding": "(미정)",
     "workingWith": [],
     "img": "https://github.com/joonspk-research/generative_agents/raw/main/cover.png",
-    "people": ["Bugeun Kim", "Byungjun Kim", "Jun Hyuk Choi", "Dayeon Seo", "Yeseon Hong", "Minju Kim"],
+    "people": ["Bugeun/Kim", "Byungjun/Kim", "Jun Hyuk/Choi", "Dayeon/Seo", "Yeseon/Hong", "Minju/Kim"],
     "tag": ["Explainability", "Generative Agents", "Society Simulation"]
   },
   {
@@ -20,7 +20,7 @@
     "funding": "과기정통부 - AI대학원 지원사업",
     "workingWith": [],
     "img": "",
-    "people": ["Bugeun Kim", "Hyeonchu Park"],
+    "people": ["Bugeun/Kim", "Hyeonchu/Park"],
     "tag": ["Explainability", "LLM Detection"]
   },
   {
@@ -34,7 +34,7 @@
       { "name": "Hudson AI", "link": "https://www.hudson-ai.com/", "color": "purple", "img": "https://hudson-ai.com/images/common/logo.webp" }
     ],
     "img": "https://dimg.donga.com/wps/NEWS/IMAGE/2023/03/28/118563299.1.png",
-    "people": ["Bugeun Kim", "Ro-hoon Oh", "Jihwan Seol", "Nayeon Kim", "Chanhee Cho", "Haewon Jeong"],
+    "people": ["Bugeun/Kim", "Ro-hoon/Oh", "Jihwan/Seol", "Nayeon/Kim", "Chanhee/Cho", "Haewon/Jeong"],
     "tag": ["Language-driven interaction", "Speech Synthesis", "Text-to-Speech", "Voice Conversion"]
   },
   {
@@ -48,6 +48,6 @@
       { "name": "서울대학교 인지컴퓨팅연구실", "link": "http://cclab.snu.ac.kr", "img": "http://cclab.snu.ac.kr/static/images/logo.png", "color": "indigo" }
     ],
     "img": "/img/project/XMQA.png",
-    "people": ["Bugeun Kim"]
+    "people": ["Bugeun/Kim"]
   }
 ]

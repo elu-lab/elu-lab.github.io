@@ -65,7 +65,7 @@ const routes = [
         component: () => import(/* webpackChunkName: "contact" */ '@/views/Contact.vue'),
       },
       {
-        path: ':lang/:role/:given/:family',
+        path: ':lang/:given/:family',
         name: 'Person',
         props: true,
         component: () => import(/* webpackChunkName: "person" */ '@/views/Person.vue'),

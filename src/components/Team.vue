@@ -51,7 +51,7 @@ export default {
           koreanName: korean,
           role: role,
           image: '/img/members/' + given.toLowerCase().replace(' ', '-') + '-' + family.toLowerCase().replace(' ', '-') + '.jpg',
-          path: role + '/' + given + '/' + family,
+          path: given + '/' + family,
           isAlumni: status === '졸업'
         }
       })
