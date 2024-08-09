@@ -2,11 +2,11 @@ Kim,Bugeun,김부근,Prof.,재직
 Oh,Ro-Hoon,오로훈,M.S. student,과정중
 Park,Hyeonchu,박현주,M.S. student,과정중
 Kim,Byungjun,김병준,M.S. student,과정중
+Kim,Nayeon,김나연,M.S. student,과정중
+Kim,Minju,김민주,M.S. student,과정중
 Seol,Jihwan,설지환,Undergrad intern,과정중
 Choi,Jun Hyuk,최준혁,Undergrad intern,과정중
-Kim,Nayeon,김나연,Undergrad intern,과정중
 Cho,ChanHee,조찬희,Undergrad intern,과정중
 Seo,Dayeon,서다연,Undergrad intern,과정중
 Jeong,Haewon,정해원,Undergrad intern,과정중
 Hong,Yeseon,홍예선,Undergrad intern,과정중
-Kim,Minju,김민주,Undergrad intern,과정중
