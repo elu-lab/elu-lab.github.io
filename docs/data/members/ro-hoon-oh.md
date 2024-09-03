@@ -2,16 +2,14 @@
 
 - E-mail: [heiscold at gmail.com](mailto:heiscold_at_gmail.com)
 - Github: [@renslightsaber](https://github.com/renslightsaber)
+- LinkedIn: [heiswicked](https://www.linkedin.com/in/heiswicked/)
 
-### *As much as we express Gratitude, we become kinder* 🤗,
-### *As much as we convey our apologies, we gain wisdom* 👨🏻‍🎓️,
-### *As much as we say our farewells, we understand Love* ✈️,
-### *And as much as we shoveled, we come to know the papers* 🔥
+### *“Dreams feel real while we’re in them. It’s only when we wake up that we realize something was actually strange.”  Inception (2010)*
 
 ### 🥽 Research Interest
 
-🎙️🎧 TTS(main-interest)
-🦙 LLM/NLP
+- 🎙️🎧 TTS(main-interest), 🎧Voice-Conversion
+- 🦙 LLM/NLP
 
 ### 🏆 Awards
 
@@ -26,16 +24,14 @@
 
 - 이메일: [heiscold at gmail.com](mailto:heiscold_at_gmail.com)
 - Github: [@renslightsaber](https://github.com/renslightsaber)
+- LinkedIn: [heiswicked](https://www.linkedin.com/in/heiswicked/)
 
-### *감사함을 전한 만큼 다정해지고,* 🤗
-### *미안한 마음을 전한 만큼 지혜를 얻게 되고,* 👨🏻‍🎓️
-### *이별 인사를 전한 만큼 사랑을 알게 됩니다.* ✈️
-### *그리고 삽질을 한 만큼 논문을 알게 됩니다* 🔥
+### *“꿈을 꾸는 동안에는 그 꿈이 현실처럼 느껴져요. 오히려 깨어나서야 뭔가 이상하다는 것을 깨닫죠.” 인셉션(2010)* 
 
 ### 🥽 관심 연구분야
 
-🎙️🎧 TTS(main-interest)
-🦙 LLM/NLP
+- 🎙️🎧 TTS(main-interest), 🎧Voice-Conversion
+- 🦙 LLM/NLP
 
 ### 🏆 수상경력
 

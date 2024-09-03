@@ -1,27 +1,23 @@
-## Nayeon Kim (Undergrad. Intern)
+## Nayeon Kim (MS Student)
 
-- E-mail: [zxxsd99 at gmail.com](mailto:zxxsd99_at_gmail.com)
-- Github: [@nayeonkkkim](https://github.com/nayeonkkkim)
+- E-mail: [nayeonkim at cau.ac.kr](mailto:nayeonkim_at_cau.ac.kr)
+- Github: [@nnykim](https://github.com/nnykim)
 
 
 ### Research Interest
 
+- Text-to-Speech
+
 - Natural Language Processing
   
-  - specific domain adaptation
-
-  - hate speech detection
-
 ---
-## 김나연 (인턴)
+## 김나연 (석사과정)
 
-- 이메일: [zxxsd99 at gmail.com](mailto:zxxsd99_at_gmail.com)
+- 이메일: [nayeonkim at cau.ac.kr](mailto:nayeonkim_at_cau.ac.kr)
 - Github: [@nayeonkkkim](https://github.com/nayeonkkkim)
 
 ### 관심 연구분야
 
-- 자연어 처리
+- 음성 합성
   
-  - 특정 도메인 적용
-
-  - 혐오 발언 탐지
+- 자연어 처리 
