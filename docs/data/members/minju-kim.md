@@ -1,24 +1,28 @@
-## Minju Kim (Undergrad. Intern)
+## Minju Kim (MS Student)
 
 - E-Mail: [minjunimmm at gmail.com](mailto:minjunimmm_at_gmail.com)
+- Github: [@Minju-nimm](https://github.com/Minju-nimm)
+- LinkedIn: [@minju-kim-9820b4312](www.linkedin.com/in/minju-kim-9820b4312)
 
 ### Research Interest
 
-- LLMs
-    - prompt engineering
-    - Psychology-based LLMs modeling
+- LLM Agents utilizing persona
+
 - Human-AI Interaction
-    - human-like LLMs
+
+- Psychology-based LLMs modeling
 
 ---
-## 김민주 (인턴)
+## 김민주 (석사과정)
 
 - 이메일: [minjunimmm at gmail.com](mailto:minjunimmm_at_gmail.com)
+- Github: [@Minju-nimm](https://github.com/Minju-nimm)
+- LinkedIn: [@minju-kim-9820b4312](www.linkedin.com/in/minju-kim-9820b4312)
 
 ### **연구 관심사**
 
-- 대규모 언어 모델(LLMs)
-    - 프롬프트 엔지니어링
-    - 심리학 기반의 LLMs 모델링
-- 인간-AI 상호작용
-    - 인간같은 대규모 언어 모델
+- 페르소나를 활용한 LLM 에이전트
+
+- 인간-인공지능 상호작용
+
+- 심리학 기반 LLM 모델링
