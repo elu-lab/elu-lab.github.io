@@ -2,13 +2,14 @@
 
 - E-mail: [heiscold at gmail.com](mailto:heiscold_at_gmail.com)
 - Github: [@renslightsaber](https://github.com/renslightsaber)
+- LinkedIn: [heiswicked](https://www.linkedin.com/in/heiswicked/)
 
 ### *“Dreams feel real while we’re in them. It’s only when we wake up that we realize something was actually strange.”  Inception (2010)*
 
 ### 🥽 Research Interest
 
-🎙️🎧 TTS(main-interest)
-🦙 LLM/NLP
+- 🎙️🎧 TTS(main-interest), 🎧Voice-Conversion
+- 🦙 LLM/NLP
 
 ### 🏆 Awards
 
@@ -23,13 +24,14 @@
 
 - 이메일: [heiscold at gmail.com](mailto:heiscold_at_gmail.com)
 - Github: [@renslightsaber](https://github.com/renslightsaber)
+- LinkedIn: [heiswicked](https://www.linkedin.com/in/heiswicked/)
 
 ### *“꿈을 꾸는 동안에는 그 꿈이 현실처럼 느껴져요. 오히려 깨어나서야 뭔가 이상하다는 것을 깨닫죠.” 인셉션(2010)* 
 
 ### 🥽 관심 연구분야
 
-🎙️🎧 TTS(main-interest)
-🦙 LLM/NLP
+- 🎙️🎧 TTS(main-interest), 🎧Voice-Conversion
+- 🦙 LLM/NLP
 
 ### 🏆 수상경력
 
