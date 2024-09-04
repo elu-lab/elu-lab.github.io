@@ -1,8 +1,8 @@
 ## Minju Kim (MS Student)
 
-- E-Mail: [minjunimmm at gmail.com](mailto:minjunimmm_at_gmail.com)
+- E-Mail: [minjunimm at gmail.com](mailto:minjunimm_at_gmail.com)
 - Github: [@Minju-nimm](https://github.com/Minju-nimm)
-- LinkedIn: [@minju-kim-9820b4312](www.linkedin.com/in/minju-kim-9820b4312)
+- LinkedIn: [@minju-kim-9820b4312](https://www.linkedin.com/in/minju-kim-9820b4312/)
 
 ### Research Interest
 
@@ -15,9 +15,9 @@
 ---
 ## 김민주 (석사과정)
 
-- 이메일: [minjunimmm at gmail.com](mailto:minjunimmm_at_gmail.com)
+- 이메일: [minjunimm at gmail.com](mailto:minjunimm_at_gmail.com)
 - Github: [@Minju-nimm](https://github.com/Minju-nimm)
-- LinkedIn: [@minju-kim-9820b4312](www.linkedin.com/in/minju-kim-9820b4312)
+- LinkedIn: [@minju-kim-9820b4312](https://www.linkedin.com/in/minju-kim-9820b4312/)
 
 ### **연구 관심사**
 
