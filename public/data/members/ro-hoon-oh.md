@@ -2,7 +2,7 @@
 
 - E-mail: [heiscold at gmail.com](mailto:heiscold_at_gmail.com)
 - Github: [@renslightsaber](https://github.com/renslightsaber)
-- LinkedIn: [heiswicked](https://www.linkedin.com/in/heiswicked/)
+- LinkedIn: [@heiswicked](https://www.linkedin.com/in/heiswicked/)
 
 ### *“Dreams feel real while we’re in them. It’s only when we wake up that we realize something was actually strange.”  Inception (2010)*
 
@@ -24,7 +24,7 @@
 
 - 이메일: [heiscold at gmail.com](mailto:heiscold_at_gmail.com)
 - Github: [@renslightsaber](https://github.com/renslightsaber)
-- LinkedIn: [heiswicked](https://www.linkedin.com/in/heiswicked/)
+- LinkedIn: [@heiswicked](https://www.linkedin.com/in/heiswicked/)
 
 ### *“꿈을 꾸는 동안에는 그 꿈이 현실처럼 느껴져요. 오히려 깨어나서야 뭔가 이상하다는 것을 깨닫죠.” 인셉션(2010)* 
 
