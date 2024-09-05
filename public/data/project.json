@@ -5,8 +5,10 @@
     "status": "진행중 (초기)",
     "period": "2023-2032",
     "content": "대규모 언어모델이 출현함에 따라, 언어모델이 사람과 유사한 언어적인 능력을 갖고 있다고 믿는 경우가 많아졌습니다. Park. et al (2023)의 논문 Generative Agents[ https://arxiv.org/abs/2304.03442 ]는 이러한 언어모델을 활용하여 소규모 인공 사회를 구현할 수 있는 가능성을 보여주었습니다. 우리 연구실에서는 이 연구를 확장하여, 거대 언어모델이 가지고 있는 언어적 능력이 인간 행동 또는 사회적 행동을 모방 또는 모사하는데 적합한지를 여러 방법으로 파악하고, 더 인간같은 Generative Agents를 구현하는 여러 방법에 대해 고민하고 있습니다. (그림은 Generative Agents 논문에서 발췌한 그림입니다.)",
-    "funding": "(미정)",
-    "workingWith": [],
+    "funding": "thingsflow",
+    "workingWith": [
+      { "name": "thingsflow", "link": "https://thingsflow.com/", "color": "purple", "img": "https://www.krafton.com/wp-content/uploads/2022/08/thingsflow_brandmark_Primary_RGB.png" }
+    ],
     "img": "https://github.com/joonspk-research/generative_agents/raw/main/cover.png",
     "people": ["Bugeun/Kim", "Byungjun/Kim", "Jun Hyuk/Choi", "Dayeon/Seo", "Yeseon/Hong", "Minju/Kim"],
     "tag": ["Explainability", "Generative Agents", "Society Simulation"]
@@ -20,7 +22,7 @@
     "funding": "과기정통부 - AI대학원 지원사업",
     "workingWith": [],
     "img": "",
-    "people": ["Bugeun/Kim", "Hyeonchu/Park"],
+    "people": ["Bugeun/Kim", "Hyeonchu/Park", "Hyebeen/Shin"],
     "tag": ["Explainability", "LLM Detection"]
   },
   {
@@ -29,10 +31,8 @@
     "status": "기술개발 자문",
     "period": "2023-2029",
     "content": "최근 기계번역 기술이 일반적인 번역 작업에서 인간 번역가와 비슷하거나 그보다 더 나은 번역 결과물을 보이고 있으나, 종합적인 상황 이해나 제한 조건이 걸리는 더빙 작업에서는 아직 인간 수준의 번역을 수행하지 못하고 있습니다. 또한, 음성합성(TTS) 기술은 감정변화가 거의 없는 일반적인 음성합성 기술이 주로 연구되고 있으며, 성우를 대체할 수 있을 정도의 연기톤 음성합성 기술은 아직 연구의 초보단계에 있습니다. 우리 연구실에서는 영화 또는 영상 기반의 콘텐츠를 위한 연기톤의 음성 합성 기술(Expressive Text-to-Speech) 기술과 문맥 맥락을 반영한 고맥락 번역 기술을 연구하고 있습니다.",
-    "funding": "Hudson AI",
-    "workingWith": [
-      { "name": "Hudson AI", "link": "https://www.hudson-ai.com/", "color": "purple", "img": "https://hudson-ai.com/images/common/logo.webp" }
-    ],
+    "funding": "(미정)",
+    "workingWith": [],
     "img": "https://dimg.donga.com/wps/NEWS/IMAGE/2023/03/28/118563299.1.png",
     "people": ["Bugeun/Kim", "Ro-hoon/Oh", "Jihwan/Seol", "Nayeon/Kim", "Chanhee/Cho", "Haewon/Jeong"],
     "tag": ["Language-driven interaction", "Speech Synthesis", "Text-to-Speech", "Voice Conversion"]
@@ -41,7 +41,7 @@
     "name": "대규모 언어모델을 활용한 수학 자동 증명 연구",
     "nameEn": "Automatic Math Proving method using LLMs",
     "status": "진행중 (초기)",
-    "period": "2023-2028",
+    "period": "2023-2024",
     "content": "최근 언어모델이 수학을 비롯한 여러 분야에서 괄목할만한 성능을 보여주고 있는 것은 사실이나, 아직 수리적 추론의 꽃인 증명에 대해서는 그 능력이 완전하지 않은 상태입니다. 우리 연구실에서는 이 한계를 돌파하고, 언어모델이 수학 증명을 자동으로 작성하기 위해서는 무엇이 필요한지를 파악하는 연구를 수행중입니다. 파악된 연구결과를 바탕으로 자동 증명 작성이 가능한 LLM 또는 프롬프트 공학(Prompt engineering) 기술을 획득할 수 있을 것이라 기대합니다.",
     "funding": "",
     "workingWith": [
