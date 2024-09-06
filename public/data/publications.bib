@@ -213,14 +213,14 @@
     abstract = "In this study, we investigate soundness of current Abstract Meaning Representation (AMR) similarity metrics in terms of equivalence and inequivalence. Specifically, AMR guidelines provide several equivalence and inequivalence conditions to reflect the meaning aspect of the semantics. Thus, it is important to examine an AMR metric{'}s soundness, i.e., whether the metric correctly reflects the guidelines. However, the existing metrics have less investigated their soundness. In this work, we propose a new experimental method using simulated data and a series of statistical tests to verify the metric{'}s soundness. Our experimental result revealed that all existing metrics such as Smatch, SemBLEU, S2match, Smatch++, WWLK-theta, WWLK-k3e2n, and SEMA did not fully meet the AMR guidelines in terms of equivalence and inequivalence aspects. Also, to alleviate this soundness problem, we suggest a revised metric called Smatch{\#}, which adopts simple graph standardization technique that can improve the soundness of an existing metric.",
 }
 
-@Article{microscopicanalysis,
-    author = {Kim, Byungjun and Seo, Dayeon and Kim, Bugeun},
-    title = {Microscopic Analysis on LLM players via Social Deduction Game},
-    journal = {arXiv},
-    year = {2024},
-    month = {Aug},
-    day = {19},
-    abstract = {Recent studies have begun developing autonomous game players for social deduction games using large language models (LLMs). When building LLM players, fine-grained evaluations are crucial for addressing weaknesses in game-playing abilities. However, existing studies have often overlooked such assessments. Specifically, we point out two issues with the evaluation methods employed. First, game-playing abilities have typically been assessed through game-level outcomes rather than specific event-level skills; Second, error analyses have lacked structured methodologies. To address these issues, we propose an approach utilizing a variant of the SpyFall game, named SpyGame. We conducted an experiment with four LLMs, analyzing their gameplay behavior in SpyGame both quantitatively and qualitatively. For the quantitative analysis, we introduced eight metrics to resolve the first issue, revealing that these metrics are more effective than existing ones for evaluating the two critical skills: intent identification and camouflage. In the qualitative analysis, we performed thematic analysis to resolve the second issue. This analysis identifies four major categories that affect gameplay of LLMs. Additionally, we demonstrate how these categories complement and support the findings from the quantitative analysis.},
-    url = {https://arxiv.org/abs/2408.09946},
+@inproceedings{microscopicanalysis,
+    author = "Kim, Byungjun and Seo, Dayeon and Kim, Bugeun",
+    title = "Microscopic Analysis on LLM players via Social Deduction Game",
+    journal = "arXiv",
+    doi = "2408.09946",
+    year = "2024",
+    month = aug,
+    abstract = "Recent studies have begun developing autonomous game players for social deduction games using large language models (LLMs). When building LLM players, fine-grained evaluations are crucial for addressing weaknesses in game-playing abilities. However, existing studies have often overlooked such assessments. Specifically, we point out two issues with the evaluation methods employed. First, game-playing abilities have typically been assessed through game-level outcomes rather than specific event-level skills; Second, error analyses have lacked structured methodologies. To address these issues, we propose an approach utilizing a variant of the SpyFall game, named SpyGame. We conducted an experiment with four LLMs, analyzing their gameplay behavior in SpyGame both quantitatively and qualitatively. For the quantitative analysis, we introduced eight metrics to resolve the first issue, revealing that these metrics are more effective than existing ones for evaluating the two critical skills: intent identification and camouflage. In the qualitative analysis, we performed thematic analysis to resolve the second issue. This analysis identifies four major categories that affect gameplay of LLMs. Additionally, we demonstrate how these categories complement and support the findings from the quantitative analysis.",
+    url = "https://arxiv.org/abs/2408.09946",
     note = {#NLP #LLMbasedAgent}
 }
