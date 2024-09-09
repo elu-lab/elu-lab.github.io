@@ -25,6 +25,7 @@ div
             .mt-0.pt-0.text-grey.text-right
               .font-italic(v-if="item.type === 'inproceedings'") @ {{item.SERIES}} conference
               .font-italic(v-else-if="item.type === 'article'") {{item.JOURNAL}} {{item.VOLUME}}, No. {{item.NUMBER}}
+              .font-italic(v-else-if="item.type === 'misc'") {{item.ARCHIVEPREFIX}}
             .mt-0.pt-0.text-right
               v-chip.float-left(size="small", v-for="tag in item.tags", :text="tag")
               v-spacer

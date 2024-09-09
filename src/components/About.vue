@@ -127,7 +127,9 @@ export default {
       })
     }, () => {})
     httpGet(['data', 'publications.bib'], (data) => {
-      this.acceptance = BibtexParser.entries(data).flatMap((item) => {
+      this.acceptance = BibtexParser.entries(data).filter((item) => {
+        return item.type != "misc"
+      }).flatMap((item) => {
         const name = item.type === 'inproceedings' ? item.SERIES : (item.JOURNAL + ' ' + item.VOLUME + ', No.' + item.NUMBER)
         return [{
           date: item.YEAR + '/' + monthParser(item.MONTH),
