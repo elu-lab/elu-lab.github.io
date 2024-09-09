@@ -9,7 +9,7 @@ export function httpGet (path, onSuccess, onError) {
 }
 
 export function monthParser(month) {
-  if (typeof(month) == 'undefined') return ''
+  if (typeof(month) === 'undefined') return ''
 
   month = month.toLowerCase()
   if (month.startsWith("jan")) return "01"

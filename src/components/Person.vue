@@ -73,7 +73,7 @@ export default {
         item.AUTHOR = nameParser(item.AUTHOR)
         return item
       }), [(item) => -item.YEAR, (item) => -item.MONTH]).filter((p) => _.includes(p.AUTHOR, this.person))
-    }, (error) => {})
+    }, (error) => {console.log(error)})
   },
   methods: {
     openLink (item) {

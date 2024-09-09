@@ -69,7 +69,7 @@ export default {
       this.allItems = this.items
       this.tagSelected = []
       this.searchWord = ''
-    }, (error) => {})
+    }, (error) => { console.log(error) })
   },
   methods: {
     openLink (item) {
