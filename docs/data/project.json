@@ -10,7 +10,7 @@
       { "name": "thingsflow", "link": "https://thingsflow.com/", "color": "purple", "img": "https://www.krafton.com/wp-content/uploads/2022/08/thingsflow_brandmark_Primary_RGB.png" }
     ],
     "img": "https://github.com/joonspk-research/generative_agents/raw/main/cover.png",
-    "people": ["Bugeun/Kim", "Byungjun/Kim", "Jun Hyuk/Choi", "Dayeon/Seo", "Yeseon/Hong", "Minju/Kim"],
+    "people": ["Bugeun/Kim", "Byungjun/Kim", "JunHyuk/Choi", "Dayeon/Seo", "Yeseon/Hong", "Minju/Kim"],
     "tag": ["Explainability", "Generative Agents", "Society Simulation"]
   },
   {
