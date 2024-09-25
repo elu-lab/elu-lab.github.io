@@ -1,4 +1,4 @@
-## JunHyuk Choi (Undergrad. Intern)
+## Junhyuk Choi (Undergrad. Intern)
 
 - E-mail: [chlwnsgur129 at naver.com](mailto:chlwnsgur129_at_naver.com)
 - Github: [@junehyeok129](https://github.com/junehyeok129)
