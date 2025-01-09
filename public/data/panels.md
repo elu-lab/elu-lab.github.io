@@ -11,7 +11,7 @@
 - 생성형 에이전트: 심리학/사회학 전공자 우대
 - 수학 증명: 수학 전공자 우대
 
-### 관심있는 분들은 [아래 설문](https://forms.gle/u32h6cBpgZNPhLAq6)에 답해주세요.
+### 관심있는 분들은 [아래 설문](https://forms.gle/u32h6cBpgZNPhLAq6)에 답해주세요. (Updated 2025.01.03)
 - 간단한 자기소개와 원하는 연구 방향, 연구실에 기대하는 것 등등을 적어 보내면 되고,
    - 박사과정에 지원하는 경우) 출판한 논문들이 있다면, DOI 목록을 보내주세요.
 - 별도로 요청하기 전에는 성적표나 기타 활동 내역 등등은 보내지 않아도 됩니다.
@@ -30,6 +30,6 @@ As of September 2023, the following experiences are preferred for each research 
 - Generative agents: psychology/sociology majors or experience in Phaser development
 - Proof of Mathematics: math majors
 
-### If you are interested, please fill [the application form](https://forms.gle/u32h6cBpgZNPhLAq6) below.
+### If you are interested, please fill [the application form](https://forms.gle/u32h6cBpgZNPhLAq6) below. (Updated 2025.01.03)
 - In the response, you may include a brief self-introduction, your desired research topic, and your expectation about our lab.
    - For Ph.D program: If you have published some papers, please send us a list of DOIs.
