@@ -8,6 +8,5 @@ Seol,Jihwan,설지환,Undergrad intern,과정중
 Choi,Junhyuk,최준혁,Undergrad intern,과정중
 Cho,ChanHee,조찬희,Undergrad intern,과정중
 Seo,Dayeon,서다연,Undergrad intern,과정중
-Jeong,Haewon,정해원,Undergrad intern,과정중
 Hong,Yeseon,홍예선,Undergrad intern,과정중
 Shin,Hyebeen,신혜빈,Undergrad intern,과정중
