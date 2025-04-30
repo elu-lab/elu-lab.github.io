@@ -5,10 +5,8 @@
     "status": "진행중 (초기)",
     "period": "2023-2032",
     "content": "대규모 언어모델이 출현함에 따라, 언어모델이 사람과 유사한 언어적인 능력을 갖고 있다고 믿는 경우가 많아졌습니다. Park. et al (2023)의 논문 Generative Agents[ https://arxiv.org/abs/2304.03442 ]는 이러한 언어모델을 활용하여 소규모 인공 사회를 구현할 수 있는 가능성을 보여주었습니다. 우리 연구실에서는 이 연구를 확장하여, 거대 언어모델이 가지고 있는 언어적 능력이 인간 행동 또는 사회적 행동을 모방 또는 모사하는데 적합한지를 여러 방법으로 파악하고, 더 인간같은 Generative Agents를 구현하는 여러 방법에 대해 고민하고 있습니다. (그림은 Generative Agents 논문에서 발췌한 그림입니다.)",
-    "funding": "thingsflow",
-    "workingWith": [
-      { "name": "thingsflow", "link": "https://thingsflow.com/", "color": "purple", "img": "https://www.krafton.com/wp-content/uploads/2022/08/thingsflow_brandmark_Primary_RGB.png" }
-    ],
+    "funding": "(미정)",
+    "workingWith": [],
     "img": "https://github.com/joonspk-research/generative_agents/raw/main/cover.png",
     "people": ["Bugeun/Kim", "Byungjun/Kim", "JunHyuk/Choi", "Dayeon/Seo", "Yeseon/Hong", "Minju/Kim"],
     "tag": ["Explainability", "Generative Agents", "Society Simulation"]
@@ -34,7 +32,7 @@
     "funding": "(미정)",
     "workingWith": [],
     "img": "https://dimg.donga.com/wps/NEWS/IMAGE/2023/03/28/118563299.1.png",
-    "people": ["Bugeun/Kim", "Ro-hoon/Oh", "Jihwan/Seol", "Nayeon/Kim", "Chanhee/Cho", "Haewon/Jeong"],
+    "people": ["Bugeun/Kim", "Ro-hoon/Oh", "Jihwan/Seol", "Nayeon/Kim", "Chanhee/Cho"],
     "tag": ["Language-driven interaction", "Speech Synthesis", "Text-to-Speech", "Voice Conversion"]
   },
   {
