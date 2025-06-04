@@ -1,3 +1,5 @@
+2025,1,1,기초프로그래밍,BASIC PROGRAMMING
+2025,1,3,휴리스틱 알고리즘,Heuristic Algorithm
 2024,2,대학원,인공지능음성처리,INTELLIGENT SIGNAL PROCESSING
 2024,1,3,휴리스틱 알고리즘,Heuristic Algorithm
 2024,1,1,인공지능개론,Introduction to AI
