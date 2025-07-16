@@ -16,7 +16,7 @@ div
 
       .v-col-12(v-if="alumniMembers.length")
         v-divider
-        h1.text-indigo-accent-2 {{lang === 'ko' ? "졸업/퇴직한 구성원" : "Alumni Members"}}
+        h1.text-indigo-accent-2 {{lang === 'ko' ? "졸업/계약만료 구성원" : "Past Members"}}
       .v-col-6.v-col-sm-4.v-col-md-3.v-col-lg-2(v-for="item in alumniMembers")
         v-card(elevation=3, rounded, hover, @click="$router.push('/' + lang + '/' + item.path)")
           v-img.align-end(lazy-src='/img/noimg.svg', :src="item.image", aspect-ratio='0.75', cover,
