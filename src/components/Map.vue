@@ -11,7 +11,7 @@ export default {
       map: null,
       markers: [],
       positions: [
-        { title: "Here!", lat: 37.503272, lng: 126.9562 }
+        { title: "Here!", lat: 37.5035977, lng: 126.9570567 }
       ]
     }
   },
@@ -26,7 +26,7 @@ export default {
     initMap () {
       const container = document.getElementById('map')
       const options = {
-        center: new window.kakao.maps.LatLng(37.5036423, 126.9560249),
+        center: new window.kakao.maps.LatLng(37.5035977, 126.9570567),
         level: 3
       }
       this.map = new window.kakao.maps.Map(container, options)

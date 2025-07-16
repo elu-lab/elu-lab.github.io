@@ -52,7 +52,7 @@ export default {
           role: role,
           image: '/img/members/' + given.toLowerCase().replace(' ', '-') + '-' + family.toLowerCase().replace(' ', '-') + '.jpg',
           path: given + '/' + family,
-          isAlumni: status === '졸업'
+          isAlumni: status === '졸업' || status === '계약만료'
         }
       })
     }, () => {})
@@ -75,7 +75,7 @@ export default {
       if (rolename === 'M.S. student') return '석사과정'
       if (rolename === 'Ph.D.') return '박사'
       if (rolename === 'M.S.') return '석사'
-      return '학부생 인턴'
+      return '학부연구생'
     },
     getColor(rolename) {
       return 'text-indigo-lighten-4'

@@ -1,3 +1,5 @@
+2025,2,2,모바일 프로그래밍,Mobile Programming
+2025,2,대학원,고급 지식표현과 추론: 에이전트,Advanced Knowledge Representation and Inference: LLM Agents
 2025,1,1,기초프로그래밍,BASIC PROGRAMMING
 2025,1,3,휴리스틱 알고리즘,Heuristic Algorithm
 2024,2,대학원,인공지능음성처리,INTELLIGENT SIGNAL PROCESSING

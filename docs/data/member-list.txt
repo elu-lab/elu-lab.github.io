@@ -4,9 +4,10 @@ Park,Hyeonchu,박현주,M.S. student,과정중
 Kim,Byungjun,김병준,M.S. student,과정중
 Kim,Nayeon,김나연,M.S. student,과정중
 Kim,Minju,김민주,M.S. student,과정중
-Seol,Jihwan,설지환,Undergrad intern,과정중
-Choi,Junhyuk,최준혁,Undergrad intern,과정중
-Cho,ChanHee,조찬희,Undergrad intern,과정중
-Seo,Dayeon,서다연,Undergrad intern,과정중
-Hong,Yeseon,홍예선,Undergrad intern,과정중
-Shin,Hyebeen,신혜빈,Undergrad intern,과정중
+Seol,Jihwan,설지환,Undergrad student,과정중
+Choi,Junhyuk,최준혁,Undergrad student,과정중
+Cho,ChanHee,조찬희,Undergrad student,과정중
+Seo,Dayeon,서다연,Undergrad student,과정중
+Hong,Yeseon,홍예선,Undergrad student,과정중
+Shin,Hyebeen,신혜빈,Undergrad student,과정중
+Jeong,Haewon,정해원,Undergrad student,계약만료
