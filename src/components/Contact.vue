@@ -10,10 +10,10 @@ div
           v-card-title: h2 {{lang === 'ko' ? "위치" : "Location"}}
           v-card-text
             .text-center.text-h5(v-if="lang === 'ko'")
-              span 중앙대학교 310관 428호
+              span 중앙대학교 208관 111호
               p.text-grey.text-body-1 서울시 동작구 흑석로 84 (우) 06974
             .text-center.text-h5(v-else)
-              span Room #428, Building #310, Chung-Ang University
+              span Room #111, Building #208, Chung-Ang University
               p.text-grey.text-body-1 84, Heukseok-ro, Dongjak-gu, Seoul 06974, Republic of Korea
             br
             Map
