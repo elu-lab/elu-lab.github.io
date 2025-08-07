@@ -5,16 +5,18 @@
 
 ### 우대조건
 전공 무관하게 모집하고 있으나, 연구실 연구주제의 원활한 진행을 위해서 특정 주제별 우대조건을 지정하고 있습니다.
-2024년 1월 현재는 연구 주제별로 다음과 같은 경험을 우대합니다.
-- LLM으로 생성된 텍스트 탐지: 학부 인공지능/컴퓨터공학/전산학/통계학 전공자 우대
-- 텍스트 기반 음성합성: 음성신호처리 경험자 또는 전기/전자공학/인공지능/컴퓨터공학/전산학 전공자 우대
-- 생성형 에이전트: 심리학/사회학 전공자 우대
+2025년 7월 현재는 연구 주제별로 다음과 같은 경험을 우대합니다.
+- LLM 편향 탐지, LLM 인지능력 개선: 학부 인공지능/컴퓨터공학/전산학/심리학 전공자 우대
+- 제어가능한 음성합성: 음성신호처리 경험자 또는 전기/전자공학/인공지능/컴퓨터공학/전산학 전공자 우대
+- 인간-AI 상호작용: 인공지능/컴퓨터공학/전산학/심리학/사회학 전공자 우대
 - 수학 증명: 수학 전공자 우대
 
 ### 관심있는 분들은 [아래 설문](https://forms.gle/u32h6cBpgZNPhLAq6)에 답해주세요. (Updated 2025.01.03)
 - 간단한 자기소개와 원하는 연구 방향, 연구실에 기대하는 것 등등을 적어 보내면 되고,
    - 박사과정에 지원하는 경우) 출판한 논문들이 있다면, DOI 목록을 보내주세요.
-- 별도로 요청하기 전에는 성적표나 기타 활동 내역 등등은 보내지 않아도 됩니다.
+- 작성하는 지원서는 연구실 내부에 공개됩니다.
+- 지원 절차의 표준화를 위하여, 이메일로 지원서를 제출하는 경우에는 답을 하지 않습니다.
+   - 연구실의 연구분야에 대한 충분한 고민 없이, 무차별 지원하는 경우를 제외하기 위한 방책입니다.
 
 ---
 ### Prerequisites
@@ -24,12 +26,15 @@
 
 ### preferential conditions
 We are recruiting regardless of major, but we designate preferential conditions for each specific topic for the smooth progress of research topics in the laboratory.
-As of September 2023, the following experiences are preferred for each research topic.
-- AI-Generated Text detection: natural language processing experiences
-- Text-based speech synthesis: experience in signal processing or electrical/electronic engineering majors
-- Generative agents: psychology/sociology majors or experience in Phaser development
+As of July 2025, the following experiences are preferred for each research topic.
+- Cognitive bias of AI / Cognitive AI architecture: LLM experiences with psychological/sociological understandings
+- Controllable speech synthesis: experience in signal processing or electrical/electronic engineering majors
+- Human-AI interaction: psychology/sociology/CS majors with experience in Flutter/Web development
 - Proof of Mathematics: math majors
 
-### If you are interested, please fill [the application form](https://forms.gle/u32h6cBpgZNPhLAq6) below. (Updated 2025.01.03)
+### If you are interested, please fill [the application form](https://forms.gle/u32h6cBpgZNPhLAq6) below
 - In the response, you may include a brief self-introduction, your desired research topic, and your expectation about our lab.
    - For Ph.D program: If you have published some papers, please send us a list of DOIs.
+- All student researchers in our lab can read your the application form.
+- We will not reply to you when you send your application through E-Mail to standardize the procedure of application.
+   - Also, we want to filter out applicants who didn't thoroughly examined our lab site.

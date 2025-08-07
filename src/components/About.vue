@@ -27,7 +27,7 @@ div
           b.text-blue-accent-4 Explainable LLM
           span.font-weight-light : Studies that identify the capabilities of LLM technology, including GPT, and suggest some improvements
           br
-          span.font-weight-light.text-caption.text-lg-body-1 E.g., Generative Agents, Machine-generated Contents Detection, etc.
+          span.font-weight-light.text-caption.text-lg-body-1 E.g., Agentic AI systems, Machine-generated Contents Detection, etc.
         li.my-2
           b.text-blue-accent-3 Language-based interaction
           span.font-weight-light : Research for improving the quality of language-driven interaction between humans and AI
@@ -56,7 +56,7 @@ div
           b.text-blue-accent-4 설명가능한 기술
           span.font-weight-light : GPT를 비롯한 LLM 기술의 능력을 파악하고 개선방안을 제시하는 연구
           br
-          span.font-weight-light.text-caption.text-lg-body-1 예) 생성형 에이전트(Generative Agent), 생성된 콘텐츠 탐지 (Machine-generated Contents Detection) 등
+          span.font-weight-light.text-caption.text-lg-body-1 예) 에이전트 시스템(Agentic AI systems), 생성된 콘텐츠 탐지 (Machine-generated Contents Detection) 등
         li.my-2
           b.text-blue-accent-3 언어적 소통 기술
           span.font-weight-light : 인간과 AI 사이의 언어 기반 상호작용에 필요한 기술 연구
@@ -79,17 +79,12 @@ div
         br
         | 관심이 있다면&nbsp;
         a(href="https://forms.gle/u32h6cBpgZNPhLAq6") 설문
-        |을 응답하거나,&nbsp;
-        a(href="/#/ko/contact") [문의하기]
-        |를 눌러 문의해주세요.
+        |을 응답해주세요.
       p.text-h6.text-red-accent-3.text-center(v-else)
         | We're looking for undergraduate interns (or students) who are interested in our study!
         br
         | If you're interested in our study, please fill&nbsp;
-        a(href="https://forms.gle/u32h6cBpgZNPhLAq6") the application form&nbsp;
-        | or contact advisor through&nbsp;
-        a(href="/#/ko/contact") 'Contact'&nbsp;
-        | tab.
+        a(href="https://forms.gle/u32h6cBpgZNPhLAq6") the application form.
     v-divider.my-10
     h2 {{lang === 'ko' ? "최근 소식" : "Recent News"}}
     v-banner.my-1(v-for="item in recentNews")
