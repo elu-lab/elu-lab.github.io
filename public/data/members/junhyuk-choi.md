@@ -14,9 +14,10 @@
     - Modeling human-like behavior in LLM-based agents
     - Investigating anthropomorphism and user perception of LLMs
     - Designing controllable agents that mimic human reasoning patterns
-- Academic Service
-    - Reviewer, ACL Student Research Workshop
-    - Program Committee/Reviewer, AAAI - 26
+
+### Academic Service
+- Reviewer, ACL Student Research Workshop
+- Program Committee/Reviewer, AAAI - 26
 ---
 ## 최준혁 (인턴)
 
@@ -34,6 +35,7 @@
     - 대규모 언어 모델 기반 에이전트의 인간 유사 행동 모델링
     - 인간화 현상 및 사용자 인식에 대한 탐구
     - 인간의 추론 과정을 모방하면서 제어 가능한 AI 에이전트 설계
-- 학술 활동
-    - 리뷰어, ACL Student Research Workshop
-    - 리뷰어, AAAI - 26    
+    
+### 학술 활동
+- 리뷰어, ACL Student Research Workshop
+- 리뷰어, AAAI - 26    
