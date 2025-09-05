@@ -1,4 +1,4 @@
-## Hyebeen Shin (Undergrad. Intern)
+## Hyebeen Shin (MS Student)
 
 - E-mail: [bin6890 at naver.com](mailto:bin6890_at_naver.com)
 - Github: [@HyeBeenS](https://github.com/HyeBeenS)
@@ -15,7 +15,7 @@
   - Development of Advanced Intent Recognition Techniques
 
 ---
-## 신혜빈 (인턴)
+## 신혜빈 (석사과정)
 
 - 이메일: [bin6890 at naver.com](mailto:bin6890_at_naver.com)
 - Github: [@HyeBeenS](https://github.com/HyeBeenS)

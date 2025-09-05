@@ -1,4 +1,4 @@
-## ChanHee Cho (Undergrad. Intern)
+## ChanHee Cho (MS Student)
 
 - E-Mail: [cch991112 at cau.ac.kr](mailto:cch991112_at_cau.ac.kr)
 
@@ -9,7 +9,7 @@
 - Audio Generation
 
 ---
-## 조찬희 (인턴)
+## 조찬희 (석사과정)
 
 - 이메일: [cch991112 at cau.ac.kr](mailto:cch991112_at_cau.ac.kr)
 
