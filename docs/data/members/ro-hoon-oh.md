@@ -1,4 +1,4 @@
-## Ro-Hoon Oh (MS Student)
+## Ro-hoon Oh (MS Student)
 
 - E-mail: [heiscold at gmail.com](mailto:heiscold_at_gmail.com)
 - Github: [@renslightsaber](https://github.com/renslightsaber)
