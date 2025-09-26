@@ -355,7 +355,7 @@
       url={https://arxiv.org/abs/2508.03262},
       note={#NLP #LLMxPsychology}
 }
-@minproceedings{voicebbq,
+@inproceedings{voicebbq,
       title={VoiceBBQ: Investigating Effect of Content and Acoustics in Social Bias of Spoken Language Model},
       author={Junhyuk Choi and Ro-hoon Oh and Jihwan Seol and Bugeun Kim},
       year={2025},
@@ -363,5 +363,19 @@
       series = {EMNLP '25},
       archivePrefix={Accepted EMNLP 25 Main},
       abstract = "We introduce VoiceBBQ, a spoken extension of the BBQ benchmark that disentangles bias along two orthogonal axes: content and acoustic. The dataset converts every BBQ context into controlled voice conditions, enabling per-axis accuracy, bias, and consistency scores that remain comparable to the original text benchmark. Using Voice BBQ, we evaluate two SLMs—LLaMA-Omni and Qwen2-Audio—and observe sharp architectural contrasts: LLaMA-Omni retains strong acoustic sensitivity, amplifying gender and accent bias, whereas Qwen2-Audio substantially dampens these cues while preserving content fidelity. Voice BBQ thus provides a compact, drop-in testbed for jointly diagnosing textual and acoustic bias across spoken language models.",
+      doi = "10.48550/arXiv.2509.21108",
+      url={https://arxiv.org/abs/2509.21108},
       note = {#Bias, #LLMxPsychology, #SLM #BK21TopConf}
 }
+@misc{choi2025acousticbasedgenderdifferentiationspeechaware,
+      title={Acoustic-based Gender Differentiation in Speech-aware Language Models},
+      author={Junhyuk Choi and Jihwan Seol and Nayeon Kim and Chanhee Cho and EunBin Cho and Bugeun Kim},
+      year={2025},
+      eprint={2509.21125},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      abstract ="Speech-aware Language Models (SpeechLMs) have fundamentally transformed human-AI interaction by enabling voice-based communication, yet they may exhibit acoustic-based gender differentiation where identical questions lead to different responses based on the speaker's gender. This paper propose a new dataset that enables systematic analysis of this phenomenon, containing 9,208 speech samples across three categories: Gender-Independent, Gender-Stereotypical, and Gender-Dependent. We further evaluated LLaMA-Omni series and discovered a paradoxical pattern; while overall responses seems identical regardless of gender, the pattern is far from unbiased responses. Specifically, in Gender-Stereotypical questions, all models consistently exhibited male-oriented responses; meanwhile, in Gender-Dependent questions where gender differentiation would be contextually appropriate, models exhibited responses independent to gender instead. We also confirm that this pattern does not result from neutral options nor perceived gender of a voice. When we allow neutral response, models tends to respond neutrally also in Gender-Dependent questions. The paradoxical pattern yet retains when we applied gender neutralization methods on speech. Through comparison between SpeechLMs with corresponding backbone LLMs, we confirmed that these paradoxical patterns primarily stem from Whisper speech encoders, which generates male-oriented acoustic tokens. These findings reveal that current SpeechLMs may not successfully remove gender biases though they prioritized general fairness principles over contextual appropriateness, highlighting the need for more sophisticated techniques to utilize gender information properly in speech technology." ,
+      doi = "10.48550/arXiv.2509.21125",
+      url={https://arxiv.org/abs/2509.21125},
+      note = {"#Bias, #SpeechLMs, #LLMxPsychology}
+}    
