@@ -215,19 +215,6 @@
     series = {*SEM 2024}
 }
 
-@misc{microscopicanalysis,
-      title={Microscopic Analysis on LLM players via Social Deduction Game}, 
-      author={Byungjun Kim and Dayeon Seo and Bugeun Kim},
-      year={2024},
-      month=aug,
-      eprint={2408.09946},
-      archivePrefix={arXiv},
-      primaryClass={cs.AI},
-      url={https://arxiv.org/abs/2408.09946}, 
-      doi = "10.48550/arXiv.2408.09946",
-      abstract = "Recent studies have begun developing autonomous game players for social deduction games using large language models (LLMs). When building LLM players, fine-grained evaluations are crucial for addressing weaknesses in game-playing abilities. However, existing studies have often overlooked such assessments. Specifically, we point out two issues with the evaluation methods employed. First, game-playing abilities have typically been assessed through game-level outcomes rather than specific event-level skills; Second, error analyses have lacked structured methodologies. To address these issues, we propose an approach utilizing a variant of the SpyFall game, named SpyGame. We conducted an experiment with four LLMs, analyzing their gameplay behavior in SpyGame both quantitatively and qualitatively. For the quantitative analysis, we introduced eight metrics to resolve the first issue, revealing that these metrics are more effective than existing ones for evaluating the two critical skills: intent identification and camouflage. In the qualitative analysis, we performed thematic analysis to resolve the second issue. This analysis identifies four major categories that affect gameplay of LLMs. Additionally, we demonstrate how these categories complement and support the findings from the quantitative analysis.",
-      note = {#NLP #LLMbasedAgent}
-}
 @inproceedings{choi2024peopleagreeithink,
       title={People will agree what I think: Investigating LLM's False Consensus Effect}, 
       author={Junhyuk Choi and Yeseon Hong and Bugeun Kim},
@@ -378,4 +365,17 @@
       doi = "10.48550/arXiv.2509.21125",
       url={https://arxiv.org/abs/2509.21125},
       note = {"#Bias, #SpeechLMs, #LLMxPsychology}
-}      
+}
+@article{spyfall,
+  author={Kim, Byungjun and Seo, Dayeon and Kim, Minju and Kim, Bugeun},
+  journal={IEEE Access}, 
+  title={Fine-Grained and Thematic Evaluation of LLMs in Social Deduction Game}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={165276-165289},
+  keywords={Games;Measurement;Cognition;Reproducibility of results;Large language models;Systematics;Oral communication;Natural language processing;Force;Error analysis;Large language models;natural language processing;intelligent agents;role-playing games;autonomous game players;social deduction games},
+  doi={10.1109/ACCESS.2025.3611399},
+  abstract = "Recent studies have investigated whether large language models (LLMs) can support obscured communication, which is characterized by core aspects such as inferring subtext and evading suspicions. To conduct the investigation, researchers have used social deduction games (SDGs) as their experimental environment, in which players conceal and infer specific information. However, prior work has often overlooked how LLMs should be evaluated in such settings. Specifically, we point out two limitations with the evaluation methods they employed. First, metrics used in prior studies are coarse-grained as they are based on overall game outcomes that often fail to capture event-level behaviors; Second, error analyses have lacked structured methodologies capable of producing insights that meaningfully support evaluation outcomes. To address these limitations, we propose a microscopic and systematic approach to the investigation. Specifically, we introduce six fine-grained metrics that resolve the first issue. To tackle the second issue, we conducted a thematic analysis and identified four major reasoning failures that undermine LLMs’ performance in obscured communication.",
+  note = {#NLP #LLMbasedAgent}
+  }      
