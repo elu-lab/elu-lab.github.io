@@ -4,7 +4,7 @@ Oh,Ro-hoon,오로훈,M.S. student,과정중
 Kim,Byungjun,김병준,M.S. student,과정중
 Kim,Nayeon,김나연,M.S. student,과정중
 Kim,Minju,김민주,M.S. student,과정중
-Cho,ChanHee,조찬희,M.S. student,과정중
+Cho,Chanhee,조찬희,M.S. student,과정중
 Shin,Hyebeen,신혜빈,M.S. student,과정중
 Yun,Chansu,윤찬수,M.S. student,과정중
 Seol,Jihwan,설지환,Undergrad student,과정중
@@ -13,4 +13,5 @@ Seo,Dayeon,서다연,Undergrad student,과정중
 Hong,Yeseon,홍예선,Undergrad student,계약만료
 Jeong,Haewon,정해원,Undergrad student,계약만료
 Kim,Kyungmin,김경민,Undergrad student,과정중
-Cho,Eunbin,조은빈,Undergrad student,과정중
+Cho,EunBin,조은빈,Undergrad student,과정중
+Kim,Seonkyo,김선교,Undergrad student,과정중

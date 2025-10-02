@@ -1,4 +1,4 @@
-## ChanHee Cho (MS Student)
+## Chanhee Cho (MS Student)
 
 - E-Mail: [cch991112 at cau.ac.kr](mailto:cch991112_at_cau.ac.kr)
 
