@@ -15,3 +15,4 @@ Jeong,Haewon,정해원,Undergrad student,계약만료
 Kim,Kyungmin,김경민,Undergrad student,과정중
 Cho,EunBin,조은빈,Undergrad student,과정중
 Kim,Seonkyo,김선교,Undergrad student,과정중
+Lee,Jeongmin,이정민,Undergrad student,과정중
