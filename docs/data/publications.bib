@@ -379,18 +379,42 @@
   abstract = "Recent studies have investigated whether large language models (LLMs) can support obscured communication, which is characterized by core aspects such as inferring subtext and evading suspicions. To conduct the investigation, researchers have used social deduction games (SDGs) as their experimental environment, in which players conceal and infer specific information. However, prior work has often overlooked how LLMs should be evaluated in such settings. Specifically, we point out two limitations with the evaluation methods they employed. First, metrics used in prior studies are coarse-grained as they are based on overall game outcomes that often fail to capture event-level behaviors; Second, error analyses have lacked structured methodologies capable of producing insights that meaningfully support evaluation outcomes. To address these limitations, we propose a microscopic and systematic approach to the investigation. Specifically, we introduce six fine-grained metrics that resolve the first issue. To tackle the second issue, we conducted a thematic analysis and identified four major reasoning failures that undermine LLMs’ performance in obscured communication.",
   note = {#NLP #LLMbasedAgent}
   }
-  @inproceedings{spam,
-      title={SPAM: Style Prompt Adherence Metric for Prompt-based TTS}, 
-      author={Chanhee Cho and Nayeon Kim and Bugeun Kim},
-      year={2026},
-      eprint={2601.05554},
-      archivePrefix={arXiv},
-      primaryClass={cs.SD},
-      url={https://arxiv.org/abs/2601.05554}, 
-      abstract="Prompt-based text-to-speech (TTS) aims to generate speech that adheres to fine-grained style cues provided in a text prompt. However, most prior works depend on neither plausible nor faithful measures to evaluate prompt adher- ence. That is, they cannot ensure whether the evaluation is grounded on the prompt and is similar to a human. Thus, we present a new automatic metric, the Style Prompt Ad- herence Metric, which explicitly satisfies both plausibility and faithfulness. Inspired by the CLAP, our approach factor- izes speech into acoustic attributes and aligns them with the style prompt. Also, we trained the scorer with a supervised contrastive loss, which could provide a clearer distinction between different semantics. We conducted two experiments on two perspectives. The plausibility experiment showed that SPAM achieved a strong correlation with the mean opinion score (MOS). Also, the faithfulness experiment demonstrated that SPAM is successfully grounded to the given style prompt, as it can discriminate different semantics of the prompt. We believe that SPAM can provide a viable automatic solution for evaluating style prompt adherence of synthesized speech.",
-      doi = "10.48550/arXiv.2601.05554",
-      note = {#Speech, #PromptAdherence},
-      year = {2026},
-      month = {jan},
-      series = {ICASSP '26}
-}         
+@inproceedings{spam,
+    title={SPAM: Style Prompt Adherence Metric for Prompt-based TTS}, 
+    author={Chanhee Cho and Nayeon Kim and Bugeun Kim},
+    year={2026},
+    eprint={2601.05554},
+    archivePrefix={arXiv},
+    primaryClass={cs.SD},
+    url={https://arxiv.org/abs/2601.05554}, 
+    abstract="Prompt-based text-to-speech (TTS) aims to generate speech that adheres to fine-grained style cues provided in a text prompt. However, most prior works depend on neither plausible nor faithful measures to evaluate prompt adher- ence. That is, they cannot ensure whether the evaluation is grounded on the prompt and is similar to a human. Thus, we present a new automatic metric, the Style Prompt Ad- herence Metric, which explicitly satisfies both plausibility and faithfulness. Inspired by the CLAP, our approach factor- izes speech into acoustic attributes and aligns them with the style prompt. Also, we trained the scorer with a supervised contrastive loss, which could provide a clearer distinction between different semantics. We conducted two experiments on two perspectives. The plausibility experiment showed that SPAM achieved a strong correlation with the mean opinion score (MOS). Also, the faithfulness experiment demonstrated that SPAM is successfully grounded to the given style prompt, as it can discriminate different semantics of the prompt. We believe that SPAM can provide a viable automatic solution for evaluating style prompt adherence of synthesized speech.",
+    doi = "10.48550/arXiv.2601.05554",
+    note = {#Speech #PromptAdherence},
+    year = {2026},
+    month = {jan},
+    series = {ICASSP '26}
+}
+@misc{choi2026diagnosingreliabilityllmasajudgeitem,
+    title={Diagnosing the Reliability of LLM-as-a-Judge via Item Response Theory},
+    author={Junhyuk Choi and Sohhyung Park and Chanhee Cho and Hyeonchu Park and Bugeun Kim},
+    year={2026},
+    eprint={2602.00521},
+    archivePrefix={arXiv},
+    primaryClass={cs.AI},
+    url={https://arxiv.org/abs/2602.00521},
+    abstract="While LLM-as-a-Judge is widely used in automated evaluation, existing validation practices primarily operate at the level of observed outputs, offering limited insight into whether LLM judges themselves function as stable and reliable measurement instruments. To address this limitation, we introduce a two-phase diagnostic framework for assessing reliability of LLM-as-a-Judge, grounded in Item Response Theory (IRT). The framework adopts Graded Response Model (GRM) of IRT and formalizes reliability along two complementary dimensions: (1) intrinsic consistency, defined as the stability of measurement behavior under prompt variations, and (2) human alignment, capturing correspondence with human quality assessments. We empirically examine diverse LLM judges with this framework, and show that leveraging IRT-GRM yields interpretable signals for diagnosing judgments systematically. These signals provide practical guidance for verifying reliablity of LLM-as-a-Judge and identifying potential causes of unreliability.",
+    doi = "10.48550/arXiv.2602.00521",
+    note = {#LLM-as-a-Judge #Reliability}
+}
+@misc{choi2026beliefauthorityimpactauthority,
+    title={Belief in Authority: Impact of Authority in Multi-Agent Evaluation Framework},
+    author={Junhyuk Choi and Jeongyoun Kwon and Heeju Kim and Haeun Cho and Hayeong Jung and Sehee Min and Bugeun Kim},
+    year={2026},
+    eprint={2601.04790},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL},
+    url={https://arxiv.org/abs/2601.04790},
+    abstract="Multi-agent systems utilizing large language models often assign authoritative roles to improve performance, yet the impact of authority bias on agent interactions remains underexplored. We present the first systematic analysis of role-based authority bias in free-form multi-agent evaluation using ChatEval. Applying French and Raven's power-based theory, we classify authoritative roles into legitimate, referent, and expert types and analyze their influence across 12-turn conversations. Experiments with GPT-4o and DeepSeek R1 reveal that Expert and Referent power roles exert stronger influence than Legitimate power roles. Crucially, authority bias emerges not through active conformity by general agents, but through authoritative roles consistently maintaining their positions while general agents demonstrate flexibility. Furthermore, authority influence requires clear position statements, as neutral responses fail to generate bias. These findings provide key insights for designing multi-agent frameworks with asymmetric interaction patterns.",
+    doi = "10.48550/arXiv.2601.04790",
+    note = {#LLM #Bias #LLMxPsychology}
+}
