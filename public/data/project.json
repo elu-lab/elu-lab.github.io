@@ -1,5 +1,19 @@
 [
   {
+    "name": "AI for Science",
+    "nameEn": "AI for Science",
+    "status": "진행중",
+    "period": "2025-",
+    "content": "LLM Agent를 활용한 과학 실험 자동화 에이전트를 연구합니다.",
+    "funding": "교육부 미래도전연구지원",
+    "workingWith": [
+      { "name": "계명대학교 SHIN Group", "link": "https://shinhumcho.wixsite.com/shingroup", "color": "blue" }
+    ],
+    "img": "",
+    "people": ["Bugeun/Kim", "Hyeonchu/Park", "Hyebeen/Shin","Kyungmin/Kim"],
+    "tag": ["AI for Science", "Agents"]
+  },
+  {
     "name": "공정관리를 위한 Multilingual RAG 기반 Agent 연구",
     "nameEn": "Multilingual, RAG-based agent for factory production system",
     "status": "진행중",
