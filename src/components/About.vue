@@ -39,6 +39,11 @@ div
           br
           span.font-weight-light.text-caption.text-lg-body-1 E.g., speech synthesis, expressive TTS, spoken dialogue systems, etc.
         li.my-2
+          b.text-blue-accent-2 	Human-Computer Interaction (HCI)
+          span.font-weight-light : Enhancing the quality of interaction between humans and AI systems through user-centered approaches.
+          br
+          span.font-weight-light.text-caption.text-lg-body-1 E.g., interactive AI systems, explainable interfaces, user-adaptive dialogue systems, etc
+        li.my-2
           b.text-blue-accent-2 Agent Systems & Multi-Agent Collaboration
           span.font-weight-light : Designing intelligent agents that collaborate, communicate, and exhibit human-like behaviors.
           br
