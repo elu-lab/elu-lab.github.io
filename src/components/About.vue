@@ -38,7 +38,7 @@ div
           span.font-weight-light : Building models that understand and generate spoken language for natural communication.
           br
           span.font-weight-light.text-caption.text-lg-body-1 E.g., speech synthesis, expressive TTS, spoken dialogue systems, etc.
-          li.my-2
+        li.my-2
           b.text-blue-accent-2 Agent Systems & Multi-Agent Collaboration
           span.font-weight-light : Designing intelligent agents that collaborate, communicate, and exhibit human-like behaviors.
           br
@@ -72,12 +72,12 @@ div
           span.font-weight-light : 인간과 AI 시스템 간의 상호작용 품질을 향상시키기 위한 사용자 중심 연구
           br
           span.font-weight-light.text-caption.text-lg-body-1 예) 인터랙티브 AI 시스템, 설명 가능한 인터페이스, 사용자 적응형 대화 시스템 등
-          li.my-2
+        li.my-2
           b.text-blue-accent-2 음성 언어 모델 및 Text-to-Speech (TTS)
           span.font-weight-light : 자연스러운 인간-AI 커뮤니케이션을 위한 음성 기반 언어 이해 및 생성 모델 연구
           br
           span.font-weight-light.text-caption.text-lg-body-1 예) 음성 합성, 감정 표현 TTS, 음성 대화 시스템 등
-          li.my-2
+        li.my-2
           b.text-blue-accent-2 	에이전트 시스템 및 멀티 에이전트 협업
           span.font-weight-light : 협력과 소통이 가능한 지능형 에이전트를 설계하고, 인간과 유사한 행동을 구현하는 연구
           br
