@@ -94,17 +94,68 @@ div
         | 자연어처리나 음성합성과 관련이 있다면 학생여러분이 원하는 어떤 연구라도 좋습니다.
         | 그러한 연구들이 쌓이다 보면, 언젠가 사회에 도움이 되는 기술들을 만들 수 있을테니까요.
     .mt-10
-      p.text-h6.text-red-accent-3.text-center(v-if="lang === 'ko'")
-        | 연구실의 학부생 인턴(스터디 포함)을 모집하고 있습니다.
-        br
-        | 관심이 있다면&nbsp;
-        a(href="https://forms.gle/u32h6cBpgZNPhLAq6") 설문
-        |을 응답해주세요.
-      p.text-h6.text-red-accent-3.text-center(v-else)
-        | We're looking for undergraduate interns (or students) who are interested in our study!
-        br
-        | If you're interested in our study, please fill&nbsp;
-        a(href="https://forms.gle/u32h6cBpgZNPhLAq6") the application form.
+      div(v-if="lang === 'ko'")
+        p.text-h6.text-red-accent-3.text-center
+          | 2026년 여름 및 2학기 학부생 인턴(스터디 포함)을 모집합니다. (총 4명)
+          br
+          | 분야별로 지원서를 별도로 접수하니, 관심 분야의 접수 링크를 확인해주세요.
+        ul.mx-5.mt-4.text-body-1
+          li.my-2
+            b.text-blue-accent-4 AI for Science (2명)
+            span.font-weight-light : 과학적 발견과 문제 해결을 가속화하기 위한 AI 방법론 연구 (Agentic AI, 과학 지식 RAG, 자동 가설 생성 등)
+            br
+            span.font-weight-light.text-caption.text-lg-body-1 우대: Agent System에 관심이 있거나, 화학·화학공학 배경이 있는 학생
+            br
+            span.font-weight-light 지원서 접수:&nbsp;
+            a(href="https://forms.gle/u32h6cBpgZNPhLAq6") (TBA)
+          li.my-2
+            b.text-blue-accent-3 AIGT (1명)
+            span.font-weight-light : AI가 생성한 텍스트를 탐지·분석해 정보의 신뢰성과 진위성을 확보하는 연구
+            br
+            span.font-weight-light 지원서 접수:&nbsp;
+            a(href="https://forms.gle/u32h6cBpgZNPhLAq6") (TBA)
+          li.my-2
+            b.text-blue-accent-2 Speech and Audio (SpeechLMs, 1명)
+            span.font-weight-light : 음성 언어 모델, Text-to-Speech(TTS), 음성 대화 시스템 연구
+            br
+            span.font-weight-light 지원서 접수:&nbsp;
+            a(href="https://forms.gle/u32h6cBpgZNPhLAq6") (TBA)
+        p.my-2.text-body-1.font-weight-light
+          | 전반적으로 프로그래밍 능력과 자연어처리에 대한 기본 지식을 갖춘 학생을 우대하며, 무엇보다 연구에 깊이 몰두할 수 있는 열정을 지닌 학생을 환영합니다.
+        p.my-2.text-body-1.font-weight-light
+          | SW융합 학부연구생 프로그램 참여를 희망하는 학생도 위 분야별 지원서를 동일하게 접수하면 됩니다.
+          | ‘SW융합 학부연구생 프로그램’ 참여를 희망하는 경우, 지원서에 해당 사항을 기재해주세요.
+      div(v-else)
+        p.text-h6.text-red-accent-3.text-center
+          | We're recruiting undergraduate interns for Summer &amp; Fall 2026! (4 positions total)
+          br
+          | Applications are accepted separately for each area, so please check the link for the area you're interested in.
+        ul.mx-5.mt-4.text-body-1
+          li.my-2
+            b.text-blue-accent-4 AI for Science (2 positions)
+            span.font-weight-light : Applying AI to accelerate scientific discovery and problem-solving (agentic AI, scientific-knowledge RAG, automated hypothesis generation, etc.)
+            br
+            span.font-weight-light.text-caption.text-lg-body-1 Preferred: interest in agent systems, or a background in chemistry or chemical engineering
+            br
+            span.font-weight-light Apply:&nbsp;
+            a(href="https://forms.gle/u32h6cBpgZNPhLAq6") (TBA)
+          li.my-2
+            b.text-blue-accent-3 AIGT (1 position)
+            span.font-weight-light : Detecting and analyzing AI-generated text to ensure reliability and authenticity
+            br
+            span.font-weight-light Apply:&nbsp;
+            a(href="https://forms.gle/u32h6cBpgZNPhLAq6") (TBA)
+          li.my-2
+            b.text-blue-accent-2 Speech and Audio (SpeechLMs, 1 position)
+            span.font-weight-light : Spoken language models, text-to-speech (TTS), and spoken dialogue systems
+            br
+            span.font-weight-light Apply:&nbsp;
+            a(href="https://forms.gle/u32h6cBpgZNPhLAq6") (TBA)
+        p.my-2.text-body-1.font-weight-light
+          | Across all areas, we prefer students with programming skills and a basic background in NLP, and above all we welcome students with the passion to dive deeply into research.
+        p.my-2.text-body-1.font-weight-light
+          | Students who wish to join the SW융합 학부연구생 프로그램 also apply through the same area-specific forms above.
+          | If you'd like to take part in the “SW융합 학부연구생 프로그램,” please note this in your application.
     v-divider.my-10
     h2 {{lang === 'ko' ? "최근 소식" : "Recent News"}}
     v-banner.my-1(v-for="item in recentNews")
