@@ -96,12 +96,12 @@ div
     .mt-10
       div(v-if="lang === 'ko'")
         p.text-h6.text-red-accent-3.text-center
-          | 2026년 여름 및 2학기 학부생 인턴(스터디 포함)을 모집합니다. (총 4명)
+          | 2026년 여름 및 2학기 학부생 인턴(스터디 포함)을 모집합니다. (총 3명)
           br
           | 분야별로 지원서를 별도로 접수하니, 관심 분야의 접수 링크를 확인해주세요.
         ul.mx-5.mt-4.text-body-1
           li.my-2
-            b.text-blue-accent-4 AI for Science (2명)
+            b.text-blue-accent-4 AI for Science (1명)
             span.font-weight-light : 과학적 발견과 문제 해결을 가속화하기 위한 AI 방법론 연구 (Agentic AI, 과학 지식 RAG, 자동 가설 생성 등)
             br
             span.font-weight-light.text-caption.text-lg-body-1 우대: Agent System에 관심이 있거나, 화학·화학공학 배경이 있는 학생
@@ -127,12 +127,12 @@ div
           | ‘SW융합 학부연구생 프로그램’ 참여를 희망하는 경우, 지원서에 해당 사항을 기재해주세요.
       div(v-else)
         p.text-h6.text-red-accent-3.text-center
-          | We're recruiting undergraduate interns for Summer &amp; Fall 2026! (4 positions total)
+          | We're recruiting undergraduate interns for Summer &amp; Fall 2026! (3 positions total)
           br
           | Applications are accepted separately for each area, so please check the link for the area you're interested in.
         ul.mx-5.mt-4.text-body-1
           li.my-2
-            b.text-blue-accent-4 AI for Science (2 positions)
+            b.text-blue-accent-4 AI for Science (1 positions)
             span.font-weight-light : Applying AI to accelerate scientific discovery and problem-solving (agentic AI, scientific-knowledge RAG, automated hypothesis generation, etc.)
             br
             span.font-weight-light.text-caption.text-lg-body-1 Preferred: interest in agent systems, or a background in chemistry or chemical engineering
