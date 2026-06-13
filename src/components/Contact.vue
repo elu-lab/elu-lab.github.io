@@ -25,10 +25,19 @@ div
             h2(v-else) Recruit: Undergraudate Intern / MS & Ph.D students
           v-card-text.margin-inside(v-html="lang === 'ko' ? panel.ko : panel.en")
     v-card.my-2.d-block
-      v-card-title {{lang === 'ko' ? '지원서 보기' : 'Expand the application form'}}
+      v-card-title {{lang === 'ko' ? '분야별 지원서' : 'Area-specific application forms'}}
       v-card-text
-        .d-inline-block {{lang === 'ko' ? '링크' : 'Link'}}:
-        a(href="https://forms.gle/u32h6cBpgZNPhLAq6") https://forms.gle/u32h6cBpgZNPhLAq6
+        p.mb-2.font-weight-light {{lang === 'ko' ? '관심 분야의 링크로 지원해주세요. (2026 여름·2학기 모집)' : "Please apply through the link for the area you're interested in. (Summer & Fall 2026)"}}
+        ul.mx-5
+          li.my-1
+            span.font-weight-medium AI for Science:&nbsp;
+            a(href="https://forms.gle/afmFA533PQU24q719") {{lang === 'ko' ? '지원서' : 'Apply'}}
+          li.my-1
+            span.font-weight-medium AIGT:&nbsp;
+            a(href="https://forms.gle/XbQbvrGMFd26j4sv6") {{lang === 'ko' ? '지원서' : 'Apply'}}
+          li.my-1
+            span.font-weight-medium Speech and Audio (SpeechLMs):&nbsp;
+            a(href="https://forms.gle/3WPmVfz2QTEr5xQ5A") {{lang === 'ko' ? '지원서' : 'Apply'}}
 </template>
 
 <script>
