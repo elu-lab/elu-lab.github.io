@@ -1,4 +1,4 @@
-## Jeongmin Lee (Undergrad. Intern)
+## Jeongmin Lee (MS Student)
 
 - E-Mail: [mulgyul203 at naver.com](mailto:mulgyul203_at_naver.com)
 - Github: [@BloomLonely](https://github.com/BloomLonely)

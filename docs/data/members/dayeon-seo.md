@@ -1,4 +1,4 @@
-## Dayeon Seo (Undergrad. Intern)
+## Dayeon Seo (MS Student)
 
 - E-Mail: [sdyhappy at cau.ac.kr](mailto:sdyhappy_at_cau.ac.kr)
 

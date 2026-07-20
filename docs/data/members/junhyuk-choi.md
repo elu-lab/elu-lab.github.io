@@ -1,4 +1,4 @@
-## Junhyuk Choi (Undergrad. Intern)
+## Junhyuk Choi (MS Student)
 
 - E-mail: [chlwnsgur129 at cau.ac.kr](mailto:chlwnsgur129_at_cau.ac.kr)
 - Github: [@junehyeok129](https://github.com/junehyeok129)
