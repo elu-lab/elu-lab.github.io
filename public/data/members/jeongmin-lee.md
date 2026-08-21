@@ -12,7 +12,7 @@
 - Human-Computer Interaction (HCI)
 
 ---
-## 이정민 (인턴)
+## 이정민 (석사과정)
 
 - 이메일: [mulgyul203 at naver.com](mailto:mulgyul203_at_naver.com)
 - Github: [@BloomLonely](https://github.com/BloomLonely)

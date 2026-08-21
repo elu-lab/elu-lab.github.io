@@ -19,7 +19,7 @@
 - Reviewer, ACL Student Research Workshop
 - Program Committee/Reviewer, AAAI - 26
 ---
-## 최준혁 (인턴)
+## 최준혁 (석사과정)
 
 - 이메일: [chlwnsgur129 at cau.ac.kr](mailto:chlwnsgur129_at_cau.ac.kr)
 - Github: [@junehyeok129](https://github.com/junehyeok129)
