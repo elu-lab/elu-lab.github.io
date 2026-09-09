@@ -11,6 +11,7 @@ Kim,Kyungmin,김경민,Undergrad student,과정중
 Kim,Seonkyo,김선교,Undergrad student,과정중
 Min,Sehee,민세희,Undergrad student,과정중
 Kim,Jeemin,김지민,Undergrad student,과정중
+Seo,Taeyoung,서태영,Undergrad student,과정중
 Oh,Ro-hoon,오로훈,M.S. student,졸업
 Kim,Byungjun,김병준,M.S. student,졸업
 Kim,Minju,김민주,M.S. student,졸업

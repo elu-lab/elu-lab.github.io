@@ -16,8 +16,8 @@
     - Designing controllable agents that mimic human reasoning patterns
 
 ### Academic Service
-- Reviewer, ACL Student Research Workshop
-- Program Committee/Reviewer, AAAI - 26
+- Reviewer, ACL ARR, ACL Student Research Workshop
+- Program Committee/Reviewer, AAAI - 26,27
 ---
 ## 최준혁 (석사과정)
 
@@ -37,5 +37,5 @@
     - 인간의 추론 과정을 모방하면서 제어 가능한 AI 에이전트 설계
     
 ### 학술 활동
-- 리뷰어, ACL Student Research Workshop
-- 리뷰어, AAAI - 26    
+- 리뷰어, ACL ARR, ACL Student Research Workshop
+- 리뷰어, AAAI - 26,27
